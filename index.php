@@ -9,9 +9,10 @@ function __autoload($className) {
     return false;
 }
 
-__autoload("AbstractFactory");
+//__autoload("AbstractFactory");
 //__autoload("Singleton");
 //__autoload("Observer");
+__autoload("Adapter");
 
 
 

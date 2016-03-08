@@ -85,7 +85,7 @@ class FirstProduct implements Product
      */
     public function getName()
     {
-        return 'The product from the first factory';
+        return 'The product from the first factory<br>';
     }
 }
 
@@ -122,7 +122,7 @@ class SecondProduct implements Product
      */
     public function getName()
     {
-        return 'The product from second factory';
+        return 'The product from second factory<br>';
     }
 }
 
