@@ -6,6 +6,7 @@
  * Time: 17:14
  */
 
+use Patterns\Classes\Singleton\Product;
 
 /*
  * =====================================

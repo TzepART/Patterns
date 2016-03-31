@@ -4,6 +4,10 @@
  *
  * @package Patterns
  */
+
+namespace Patterns\Classes\Singleton;
+
+
 final class Product
 {
 
