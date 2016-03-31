@@ -5,7 +5,9 @@
  * Date: 31.03.2016
  * Time: 19:39
  */
-class ComponentException extends Exception {};
+namespace Patterns\Classes\Composite;
+
+class ComponentException extends \Exception {};
 
 abstract class Component
 {
