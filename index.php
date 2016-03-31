@@ -12,7 +12,8 @@ function __autoload($className) {
 //__autoload("AbstractFactory");
 //__autoload("Singleton");
 //__autoload("Observer");
-__autoload("Adapter");
+//__autoload("Adapter");
+__autoload("Composite");
 
 
 
