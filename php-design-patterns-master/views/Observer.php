@@ -12,6 +12,11 @@
  * =====================================
  */
 
+use Patterns\Classes\Observer\priceSimulator;
+use Patterns\Classes\Observer\Pound;
+use Patterns\Classes\Observer\Yen;
+use Patterns\Classes\Observer\Euro;
+
 $priceSimulator = new priceSimulator();
 
 /*
