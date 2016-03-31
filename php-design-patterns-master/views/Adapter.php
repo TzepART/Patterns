@@ -5,7 +5,8 @@
  * Date: 08.03.2016
  * Time: 21:27
  */
-// client
+use \Patterns\Classes\Adapter\SimpleBook;
+use \Patterns\Classes\Adapter\BookAdapter;
 
 writeln('BEGIN TESTING ADAPTER PATTERN');
 writeln('');

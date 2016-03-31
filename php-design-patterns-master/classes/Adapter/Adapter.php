@@ -5,6 +5,9 @@
  * Date: 08.03.2016
  * Time: 17:22
  */
+
+namespace Patterns\Classes\Adapter;
+
 class SimpleBook {
     private $author;
     private $title;
