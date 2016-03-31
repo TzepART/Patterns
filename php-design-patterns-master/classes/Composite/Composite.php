@@ -38,7 +38,11 @@ class Composite extends Component
     public function GetChild($index)
     {
         if (!isset($this->_children[$index])) {
-            throw new ComponentException("Child not exists");
+            try {
+                throw new ComponentException("Child not exists");
+            } catch (\Exception $e) {
+                echo $e->getMessage()."\n";
+            }
         }
 
         return $this->_children[$index];
@@ -56,7 +60,11 @@ class Composite extends Component
     public function Remove($index)
     {
         if (!isset($this->_children[$index])) {
-            throw new ComponentException("Child not exists");
+            try {
+                throw new ComponentException("Child not exists");
+            } catch (\Exception $e) {
+                echo $e->getMessage()."\n";
+            }
         }
 
         unset($this->_children[$index]);
@@ -70,9 +78,19 @@ class Composite extends Component
 
 class Leaf extends Component
 {
+    function __construct()
+    {   echo "<pre>";
+        var_dump("Hello, I'm child!");
+        echo "</pre>";
+    }
+
     public function Add(Component $Component)
     {
-        throw new ComponentException("I can't append child to myself");
+        try {
+            throw new ComponentException("I can't append child to myself");
+        } catch (\Exception $e) {
+            echo $e->getMessage()."\n";
+        }
     }
 
     public function GetChild($index)
@@ -91,7 +109,11 @@ class Leaf extends Component
 
     public function Remove($index)
     {
-        throw new ComponentException("Child not exists");
+        try {
+            throw new ComponentException("Child not exists");
+        } catch (\Exception $e) {
+            echo $e->getMessage()."\n";
+        }
     }
 
     public function GetChildren()

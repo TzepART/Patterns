@@ -9,8 +9,13 @@ use \Patterns\Classes\Composite\Leaf;
 use \Patterns\Classes\Composite\Composite;
 
 $leaf = new Leaf();
+$leaf1 = new Leaf();
+$leaf2 = new Leaf();
 $composite = new Composite();
-$leaf->GetChild(2);
+$composite->Add($leaf);
+$composite->Add($leaf1);
+$composite->Add($leaf2);
+$composite->GetChildren();
 
 
 
