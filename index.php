@@ -13,7 +13,8 @@ function __autoload($className) {
 //__autoload("Singleton");
 //__autoload("Observer");
 //__autoload("Adapter");
-__autoload("Composite");
+//__autoload("Composite");
+__autoload("LazyInitialization");
 
 
 

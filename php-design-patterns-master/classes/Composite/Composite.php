@@ -104,7 +104,7 @@ class Leaf extends Component
 
     public function Operation()
     {
-        print "I am leaf\n";
+        echo "I am leaf\n";
     }
 
     public function Remove($index)

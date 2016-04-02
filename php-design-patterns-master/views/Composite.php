@@ -16,6 +16,7 @@ $composite->Add($leaf);
 $composite->Add($leaf1);
 $composite->Add($leaf2);
 $composite->GetChildren();
+$composite->Operation();
 
 
 

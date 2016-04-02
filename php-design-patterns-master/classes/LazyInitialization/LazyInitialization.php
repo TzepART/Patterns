@@ -2,6 +2,8 @@
 /**
  * Some product
  */
+namespace Patterns\Classes\LazyInitialization;
+
 interface Product
 {
 
