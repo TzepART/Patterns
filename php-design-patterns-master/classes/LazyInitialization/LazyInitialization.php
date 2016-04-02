@@ -71,7 +71,7 @@ class FirstProduct implements Product
      */
     public function getName()
     {
-        return 'The first product';
+        return 'The first product<br>';
     }
 }
 
@@ -88,6 +88,6 @@ class SecondProduct implements Product
      */
     public function getName()
     {
-        return 'Second product';
+        return 'Second product<br>';
     }
 }
