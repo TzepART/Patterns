@@ -91,18 +91,3 @@ class SecondProduct implements Product
         return 'Second product';
     }
 }
-
-/*
- * =====================================
- *      USING OF LAZY INITIALIZATION
- * =====================================
- */
-
-$factory = new Factory();
-
-print_r($factory->getFirstProduct()->getName());
-// The first product
-print_r($factory->getSecondProduct()->getName());
-// Second product
-print_r($factory->getFirstProduct()->getName());
-// The first product
