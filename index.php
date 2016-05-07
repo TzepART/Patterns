@@ -14,7 +14,8 @@ function __autoload($className) {
 //__autoload("Observer");
 //__autoload("Adapter");
 //__autoload("Composite");
-__autoload("LazyInitialization");
+//__autoload("LazyInitialization");
+__autoload("FactoryMethod");
 
 
 
