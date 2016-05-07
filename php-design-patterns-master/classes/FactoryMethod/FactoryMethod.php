@@ -94,3 +94,29 @@ class SecondProduct implements Product
         return 'Second product';
     }
 }
+
+class UserFactory{
+    
+    static function create($user_id)
+    {
+        if($user_id>100){
+            return new SecondProduct;
+        }else{
+            return new FirstProduct;
+        }
+    }
+}
+
+class UserStrategy{
+
+    public function getName($user_id)
+    {
+        if($user_id>100){
+            $name = new SecondProduct;
+            return $name->getName();
+        }else{
+            $name = new FirstProduct;
+            return $name->getName();
+        }
+    }
+}
