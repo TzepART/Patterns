@@ -94,19 +94,3 @@ class SecondProduct implements Product
         return 'Second product';
     }
 }
-
-/*
- * =====================================
- *        USING OF FACTORY METHOD
- * =====================================
- */
-
-$factory = new FirstFactory();
-$firstProduct = $factory->getProduct();
-$factory = new SecondFactory();
-$secondProduct = $factory->getProduct();
-
-print_r($firstProduct->getName());
-// The first product
-print_r($secondProduct->getName());
-// Second product
