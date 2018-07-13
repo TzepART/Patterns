@@ -1,2 +1,2 @@
 # Patterns
-It's simple project with examlpes of patterns on PHP
+It's simple project with examples of patterns on PHP
