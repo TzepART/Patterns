@@ -6,6 +6,8 @@
  * Time: 13:43
  */
 
+namespace Patterns\FactoryMethod;
+
 /*
  * Factory Method
  * Вкратце

@@ -6,6 +6,8 @@
  * Time: 13:19
  */
 
+namespace Patterns\SimpleFactory;
+
 /*
  * Simple Factory
  * Вкратце
