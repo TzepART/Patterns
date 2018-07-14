@@ -6,7 +6,7 @@
  * Time: 16:19
  */
 
-namespace Patterns\AbstractFactory;
+namespace Patterns\CreationalPatterns\AbstractFactory;
 
 /*
  * Вкратце

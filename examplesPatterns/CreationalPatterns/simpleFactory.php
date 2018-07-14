@@ -6,7 +6,7 @@
  * Time: 13:19
  */
 
-namespace Patterns\SimpleFactory;
+namespace Patterns\CreationalPatterns\SimpleFactory;
 
 /*
  * Simple Factory

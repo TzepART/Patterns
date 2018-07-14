@@ -6,7 +6,7 @@
  * Time: 13:43
  */
 
-namespace Patterns\FactoryMethod;
+namespace Patterns\CreationalPatterns\FactoryMethod;
 
 /*
  * Factory Method

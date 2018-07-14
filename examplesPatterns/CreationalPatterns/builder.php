@@ -6,7 +6,7 @@
  * Time: 02:13
  */
 
-namespace Patterns\Builder;
+namespace Patterns\CreationalPatterns\Builder;
 
 /*
  * Вкратце
