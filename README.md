@@ -15,3 +15,4 @@ It's simple project with examples of patterns on PHP
 [StructuralPatterns](https://github.com/TzepART/patterns/blob/master/examplesPatterns/StructuralPatterns)
 =========================================================================================================
 - [Adapter](https://github.com/TzepART/patterns/blob/master/examplesPatterns/StructuralPatterns/adapter.php)
+- [Bridge](https://github.com/TzepART/patterns/blob/master/examplesPatterns/StructuralPatterns/bridge.php)
