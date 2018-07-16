@@ -20,6 +20,7 @@ It's simple project with examples of patterns on PHP
 - [Decorator](https://github.com/TzepART/patterns/blob/master/examplesPatterns/StructuralPatterns/decorator.php)
 - [Facade](https://github.com/TzepART/patterns/blob/master/examplesPatterns/StructuralPatterns/facade.php)
 - [Flyweight](https://github.com/TzepART/patterns/blob/master/examplesPatterns/StructuralPatterns/flyweight.php)
+- [Proxy](https://github.com/TzepART/patterns/blob/master/examplesPatterns/StructuralPatterns/proxy.php)
 
 
 [Behavioral Patterns](https://github.com/TzepART/patterns/blob/master/examplesPatterns/BehavioralPatterns)
