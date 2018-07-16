@@ -100,7 +100,7 @@ if(count($dataSet) > 10){
     $sorter = new Sorter(new BubbleSortStrategy());
 }
 
-$result = $sorter->sort($dataSet); // "Sorting using bubble sort";
+$result = $sorter->sort($dataSet);
 echo implode(',',$result);
 echo "\n";
 
