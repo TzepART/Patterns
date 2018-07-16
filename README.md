@@ -18,6 +18,7 @@ It's simple project with examples of patterns on PHP
 - [Bridge](https://github.com/TzepART/patterns/blob/master/examplesPatterns/StructuralPatterns/bridge.php)
 - [Composite](https://github.com/TzepART/patterns/blob/master/examplesPatterns/StructuralPatterns/composite.php)
 - [Decorator](https://github.com/TzepART/patterns/blob/master/examplesPatterns/StructuralPatterns/decorator.php)
+- [Facade](https://github.com/TzepART/patterns/blob/master/examplesPatterns/StructuralPatterns/facade.php)
 
 
 [Behavioral Patterns](https://github.com/TzepART/patterns/blob/master/examplesPatterns/BehavioralPatterns)
