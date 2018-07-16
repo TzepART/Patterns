@@ -2,7 +2,7 @@
 It's simple project with examples of patterns on PHP
 
 
-[CreationalPatterns](https://github.com/TzepART/patterns/blob/master/examplesPatterns/CreationalPatterns)
+[Creational Patterns](https://github.com/TzepART/patterns/blob/master/examplesPatterns/CreationalPatterns)
 ====================================================================================================================
 - [Simple Factory](https://github.com/TzepART/patterns/blob/master/examplesPatterns/CreationalPatterns/simpleFactory.php)
 - [Factory Method](https://github.com/TzepART/patterns/blob/master/examplesPatterns/CreationalPatterns/factoryMethod.php)
@@ -12,7 +12,12 @@ It's simple project with examples of patterns on PHP
 - [Singleton](https://github.com/TzepART/patterns/blob/master/examplesPatterns/CreationalPatterns/singleton.php)
 
 
-[StructuralPatterns](https://github.com/TzepART/patterns/blob/master/examplesPatterns/StructuralPatterns)
+[Structural Patterns](https://github.com/TzepART/patterns/blob/master/examplesPatterns/StructuralPatterns)
 =========================================================================================================
 - [Adapter](https://github.com/TzepART/patterns/blob/master/examplesPatterns/StructuralPatterns/adapter.php)
 - [Bridge](https://github.com/TzepART/patterns/blob/master/examplesPatterns/StructuralPatterns/bridge.php)
+
+
+[Behavioral Patterns](https://github.com/TzepART/patterns/blob/master/examplesPatterns/BehavioralPatterns)
+=========================================================================================================
+- [Strategy](https://github.com/TzepART/patterns/blob/master/examplesPatterns/StructuralPatterns/strategy.php)
