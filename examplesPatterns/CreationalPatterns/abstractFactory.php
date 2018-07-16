@@ -18,21 +18,42 @@ namespace Patterns\CreationalPatterns\AbstractFactory;
  */
 
 //The first classes set
+/**
+ * Interface DoorInterface
+ * @package Patterns\CreationalPatterns\AbstractFactory
+ */
 interface DoorInterface
 {
+    /**
+     * @return mixed
+     */
     public function getDescription();
 }
 
+/**
+ * Class PlasticDoor
+ * @package Patterns\CreationalPatterns\AbstractFactory
+ */
 class PlasticDoor implements DoorInterface
 {
+    /**
+     * @return mixed|void
+     */
     public function getDescription()
     {
         echo 'I am a plastic door';
     }
 }
 
+/**
+ * Class IronDoor
+ * @package Patterns\CreationalPatterns\AbstractFactory
+ */
 class IronDoor implements DoorInterface
 {
+    /**
+     * @return mixed|void
+     */
     public function getDescription()
     {
         echo 'I am an iron door';
@@ -40,21 +61,43 @@ class IronDoor implements DoorInterface
 }
 
 //The second classes set
+
+/**
+ * Interface DoorFittingExpert
+ * @package Patterns\CreationalPatterns\AbstractFactory
+ */
 interface DoorFittingExpert
 {
+    /**
+     * @return mixed
+     */
     public function getDescription();
 }
 
+/**
+ * Class PlasticMaster
+ * @package Patterns\CreationalPatterns\AbstractFactory
+ */
 class PlasticMaster implements DoorFittingExpert
 {
+    /**
+     * @return mixed|void
+     */
     public function getDescription()
     {
         echo 'I can only plastic wooden doors';
     }
 }
 
+/**
+ * Class Welder
+ * @package Patterns\CreationalPatterns\AbstractFactory
+ */
 class Welder implements DoorFittingExpert
 {
+    /**
+     * @return mixed|void
+     */
     public function getDescription()
     {
         echo 'I can only fit iron doors';
@@ -63,20 +106,43 @@ class Welder implements DoorFittingExpert
 
 
 //Create Abstract Factory
+
+/**
+ * Interface DoorAbstractFactory
+ * @package Patterns\CreationalPatterns\AbstractFactory
+ */
 interface DoorAbstractFactory
 {
+    /**
+     * @return DoorInterface
+     */
     public function makeDoor(): DoorInterface;
+
+    /**
+     * @return DoorFittingExpert
+     */
     public function makeFittingExpert(): DoorFittingExpert;
 }
 
 // Factory for creating plastic door and master by plastic door
+
+/**
+ * Class PlasticDoorFactory
+ * @package Patterns\CreationalPatterns\AbstractFactory
+ */
 class PlasticDoorFactory implements DoorAbstractFactory
 {
+    /**
+     * @return DoorInterface
+     */
     public function makeDoor(): DoorInterface
     {
         return new PlasticDoor();
     }
 
+    /**
+     * @return DoorFittingExpert
+     */
     public function makeFittingExpert(): DoorFittingExpert
     {
         return new PlasticMaster();
@@ -84,13 +150,24 @@ class PlasticDoorFactory implements DoorAbstractFactory
 }
 
 // Factory for creating iron door and master by iron door
+
+/**
+ * Class IronDoorFactory
+ * @package Patterns\CreationalPatterns\AbstractFactory
+ */
 class IronDoorFactory implements DoorAbstractFactory
 {
+    /**
+     * @return DoorInterface
+     */
     public function makeDoor(): DoorInterface
     {
         return new IronDoor();
     }
 
+    /**
+     * @return DoorFittingExpert
+     */
     public function makeFittingExpert(): DoorFittingExpert
     {
         return new Welder();

@@ -21,6 +21,10 @@ namespace Patterns\CreationalPatterns\SimpleFactory;
 /**
  * Interface Door
  */
+/**
+ * Interface Door
+ * @package Patterns\CreationalPatterns\SimpleFactory
+ */
 interface Door
 {
     /**
@@ -173,8 +177,17 @@ class WoodHouse implements House{
 
 }
 
+/**
+ * Class HouseFactory
+ * @package Patterns\CreationalPatterns\SimpleFactory
+ */
 class HouseFactory{
 
+    /**
+     * @param int $countDoors
+     * @param int $countWindows
+     * @return WoodHouse
+     */
     public static function makeHouse(int $countDoors = 0, int $countWindows = 0)
     {
         return new WoodHouse($countDoors,$countWindows);

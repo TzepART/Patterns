@@ -20,15 +20,28 @@ namespace Patterns\CreationalPatterns\Singleton;
  * - создание прототипа (mocking) «Одиночки» может быть затруднено.
  */
 
+/**
+ * Class MainBoss
+ * @package Patterns\CreationalPatterns\Singleton
+ */
 final class MainBoss
 {
+    /**
+     * @var
+     */
     private static $instance;
 
+    /**
+     * MainBoss constructor.
+     */
     private function __construct()
     {
         // Прячем конструктор
     }
 
+    /**
+     * @return MainBoss
+     */
     public static function getInstance(): MainBoss
     {
         if (!self::$instance) {
@@ -43,12 +56,14 @@ final class MainBoss
         // Отключаем клонирование
     }
 
+
     private function __wakeup()
     {
         // Отключаем десериализацию
     }
 }
 
+//Using
 $president1 = MainBoss::getInstance();
 $president2 = MainBoss::getInstance();
 

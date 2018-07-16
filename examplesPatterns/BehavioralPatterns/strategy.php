@@ -15,15 +15,31 @@ namespace Patterns\BehavioralPatterns\Strategy;
  * Шаблон «Стратегия» позволяет при выполнении выбирать поведение алгоритма.
  */
 
-//create example for sorting
+//Create example for sorting
 //Step 1. Create SortStrategy Interface and classes of sorting
+/**
+ * Interface SortStrategy
+ * @package Patterns\BehavioralPatterns\Strategy
+ */
 interface SortStrategy
 {
+    /**
+     * @param array $dataSet
+     * @return array
+     */
     public function sort(array $dataSet): array;
 }
 
+/**
+ * Class BubbleSortStrategy
+ * @package Patterns\BehavioralPatterns\Strategy
+ */
 class BubbleSortStrategy implements SortStrategy
 {
+    /**
+     * @param array $dataSet
+     * @return array
+     */
     public function sort(array $dataSet): array
     {
         echo "Sorting using bubble sort";
@@ -39,8 +55,16 @@ class BubbleSortStrategy implements SortStrategy
     }
 }
 
+/**
+ * Class QuickSortStrategy
+ * @package Patterns\BehavioralPatterns\Strategy
+ */
 class QuickSortStrategy implements SortStrategy
 {
+    /**
+     * @param array $dataSet
+     * @return array
+     */
     public function sort(array $dataSet): array
     {
         echo "Sorting using quick sort";
@@ -52,6 +76,10 @@ class QuickSortStrategy implements SortStrategy
         return $dataSet;
     }
 
+    /**
+     * @param array $dataSet
+     * @return array
+     */
     protected function quickSort(array $dataSet)
     {
         $loe = $gt = array();
@@ -75,23 +103,38 @@ class QuickSortStrategy implements SortStrategy
     }
 }
 
-//Now create client, that is using our strategy
+//Step 2. Now create client, that is using our strategy
+/**
+ * Class Sorter
+ * @package Patterns\BehavioralPatterns\Strategy
+ */
 class Sorter
 {
+    /**
+     * @var SortStrategy
+     */
     protected $sorter;
 
+    /**
+     * Sorter constructor.
+     * @param SortStrategy $sorter
+     */
     public function __construct(SortStrategy $sorter)
     {
         $this->sorter = $sorter;
     }
 
+    /**
+     * @param array $dataSet
+     * @return array
+     */
     public function sort(array $dataSet): array
     {
         return $this->sorter->sort($dataSet);
     }
 }
 
-//Using
+//Step 3. Using
 $dataSet = [1, 5, 4, 3, 2, 8, 1, 1, 5, 4, 3, 2, 8, 1, 1, 5, 4, 3, 2, 8, 1];
 
 if(count($dataSet) > 10){

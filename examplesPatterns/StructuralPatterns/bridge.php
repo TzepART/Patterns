@@ -15,72 +15,143 @@ namespace Patterns\StructuralPatterns\Bridge;
  * отделение абстракции от реализации, чтобы их обе можно было изменять независимо друг от друга.
  */
 
-//Create example with different web-page's templates
+//Step 1. Create example with different web-page's templates
+/**
+ * Interface WebPage
+ * @package Patterns\StructuralPatterns\Bridge
+ */
 interface WebPage
 {
+    /**
+     * WebPage constructor.
+     * @param Theme $theme
+     */
     public function __construct(Theme $theme);
+
+    /**
+     * @return mixed
+     */
     public function getContent();
 }
 
+/**
+ * Class About
+ * @package Patterns\StructuralPatterns\Bridge
+ */
 class About implements WebPage
 {
+    /**
+     * @var Theme
+     */
     protected $theme;
 
+    /**
+     * About constructor.
+     * @param Theme $theme
+     */
     public function __construct(Theme $theme)
     {
         $this->theme = $theme;
     }
 
+    /**
+     * @return mixed|string
+     */
     public function getContent()
     {
         return "About page in " . $this->theme->getColor();
     }
 }
 
+/**
+ * Class Careers
+ * @package Patterns\StructuralPatterns\Bridge
+ */
 class Careers implements WebPage
 {
+    /**
+     * @var Theme
+     */
     protected $theme;
 
+    /**
+     * Careers constructor.
+     * @param Theme $theme
+     */
     public function __construct(Theme $theme)
     {
         $this->theme = $theme;
     }
 
+    /**
+     * @return mixed|string
+     */
     public function getContent()
     {
         return "Careers page in " . $this->theme->getColor();
     }
 }
 
-//Separate templates hierarchy
+//Step 2. Separate templates hierarchy
+
+/**
+ * Interface Theme
+ * @package Patterns\StructuralPatterns\Bridge
+ */
 interface Theme
 {
+    /**
+     * @return mixed
+     */
     public function getColor();
 }
 
+/**
+ * Class DarkTheme
+ * @package Patterns\StructuralPatterns\Bridge
+ */
 class DarkTheme implements Theme
 {
+    /**
+     * @return mixed|string
+     */
     public function getColor()
     {
         return 'Dark Black';
     }
 }
+
+/**
+ * Class LightTheme
+ * @package Patterns\StructuralPatterns\Bridge
+ */
 class LightTheme implements Theme
 {
+    /**
+     * @return mixed|string
+     */
     public function getColor()
     {
         return 'Off white';
     }
 }
+
+/**
+ * Class AquaTheme
+ * @package Patterns\StructuralPatterns\Bridge
+ */
 class AquaTheme implements Theme
 {
+    /**
+     * @return mixed|string
+     */
     public function getColor()
     {
         return 'Light blue';
     }
 }
 
-//Using
+//Step 3. Using
 $darkTheme = new DarkTheme();
 $lightTheme = new LightTheme();
 

@@ -20,44 +20,82 @@ namespace Patterns\CreationalPatterns\Builder;
  */
 
 // Add builder for entity CheeseBurger
+/**
+ * Class CheeseBurgerBuilder
+ * @package Patterns\CreationalPatterns\Builder
+ */
 class CheeseBurgerBuilder
 {
+    /**
+     * @var int
+     */
     public $size;
 
+    /**
+     * @var bool
+     */
     public $cheese = false;
+    /**
+     * @var bool
+     */
     public $pepperoni = false;
+    /**
+     * @var bool
+     */
     public $lettuce = false;
+    /**
+     * @var bool
+     */
     public $tomato = false;
 
+    /**
+     * CheeseBurgerBuilder constructor.
+     * @param int $size
+     */
     public function __construct(int $size)
     {
         $this->size = $size;
     }
 
+    /**
+     * @return $this
+     */
     public function addPepperoni()
     {
         $this->pepperoni = true;
         return $this;
     }
 
+    /**
+     * @return $this
+     */
     public function addLettuce()
     {
         $this->lettuce = true;
         return $this;
     }
 
+    /**
+     * @return $this
+     */
     public function addCheese()
     {
         $this->cheese = true;
         return $this;
     }
 
+    /**
+     * @return $this
+     */
     public function addTomato()
     {
         $this->tomato = true;
         return $this;
     }
 
+    /**
+     * @return CheeseBurger
+     */
     public function build(): CheeseBurger
     {
         return new CheeseBurger($this);
@@ -65,15 +103,39 @@ class CheeseBurgerBuilder
 }
 
 //Add class CheeseBurger, that use builder
+
+/**
+ * Class CheeseBurger
+ * @package Patterns\CreationalPatterns\Builder
+ */
 class CheeseBurger
 {
+    /**
+     * @var int
+     */
     protected $size;
 
+    /**
+     * @var bool
+     */
     protected $cheese = false;
+    /**
+     * @var bool
+     */
     protected $pepperoni = false;
+    /**
+     * @var bool
+     */
     protected $lettuce = false;
+    /**
+     * @var bool
+     */
     protected $tomato = false;
 
+    /**
+     * CheeseBurger constructor.
+     * @param CheeseBurgerBuilder $builder
+     */
     public function __construct(CheeseBurgerBuilder $builder)
     {
         $this->size = $builder->size;

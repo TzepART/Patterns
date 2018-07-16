@@ -21,8 +21,10 @@ namespace Patterns\CreationalPatterns\FactoryMethod;
  * локализовать знание о том, какой класс принимает эти обязанности на себя
  */
 
+
 /**
  * Interface ToolInterface
+ * @package Patterns\CreationalPatterns\FactoryMethod
  */
 interface ToolInterface{
     /**
