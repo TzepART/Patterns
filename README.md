@@ -22,3 +22,4 @@ It's simple project with examples of patterns on PHP
 [Behavioral Patterns](https://github.com/TzepART/patterns/blob/master/examplesPatterns/BehavioralPatterns)
 =========================================================================================================
 - [Strategy](https://github.com/TzepART/patterns/blob/master/examplesPatterns/BehavioralPatterns/strategy.php)
+- [Decorator](https://github.com/TzepART/patterns/blob/master/examplesPatterns/BehavioralPatterns/decorator.php)
