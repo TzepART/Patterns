@@ -55,7 +55,6 @@ class ChatRoom implements ChatRoomMediator
 }
 
 //Step 2. Create an "Colleague":
-
 /**
  * Class User
  * @package Patterns\BehavioralPatterns\Mediator
