@@ -27,3 +27,4 @@ It's simple project with examples of patterns on PHP
 =========================================================================================================
 - [Strategy](https://github.com/TzepART/patterns/blob/master/examplesPatterns/BehavioralPatterns/strategy.php)
 - [Chain Responsibility](https://github.com/TzepART/patterns/blob/master/examplesPatterns/BehavioralPatterns/chainResponsibility.php)
+- [Command](https://github.com/TzepART/patterns/blob/master/examplesPatterns/BehavioralPatterns/command.php)
