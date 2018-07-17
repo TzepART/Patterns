@@ -200,27 +200,19 @@ class VanillaCoffee implements Coffee
 
 //Step 3. Using
 $someCoffee = new SimpleCoffee();
-echo $someCoffee->getFormattedCost(); // Cost - 10
-echo "\n";
-echo $someCoffee->getDescription(); // Simple Coffee
-echo "\n";
+echo $someCoffee->getFormattedCost().PHP_EOL; // Cost - 10
+echo $someCoffee->getDescription().PHP_EOL; // Simple Coffee
 
 
 $someCoffee = new MilkCoffee($someCoffee);
-echo $someCoffee->getFormattedCost(); // Cost - 12
-echo "\n";
-echo $someCoffee->getDescription(); // Simple Coffee, milk
-echo "\n";
+echo $someCoffee->getFormattedCost().PHP_EOL; // Cost - 12
+echo $someCoffee->getDescription().PHP_EOL; // Simple Coffee, milk
 
 
 $someCoffee = new WhipCoffee($someCoffee);
-echo $someCoffee->getFormattedCost(); // Cost - 17
-echo "\n";
-echo $someCoffee->getDescription(); // Simple Coffee, milk, whip
-echo "\n";
+echo $someCoffee->getFormattedCost().PHP_EOL; // Cost - 17
+echo $someCoffee->getDescription().PHP_EOL; // Simple Coffee, milk, whip
 
 $someCoffee = new VanillaCoffee($someCoffee);
-echo $someCoffee->getFormattedCost(); // Cost - 20
-echo "\n";
-echo $someCoffee->getDescription(); // Simple Coffee, milk, whip, vanilla
-echo "\n";
+echo $someCoffee->getFormattedCost().PHP_EOL; // Cost - 20
+echo $someCoffee->getDescription().PHP_EOL; // Simple Coffee, milk, whip, vanilla

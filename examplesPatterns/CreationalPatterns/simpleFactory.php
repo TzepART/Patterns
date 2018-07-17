@@ -81,7 +81,6 @@ class WoodenDoor implements Door
 }
 
 // Add Factory for creating and returns doors
-
 /**
  * Class DoorFactory
  */
@@ -196,10 +195,10 @@ class HouseFactory{
 
 //Using DoorFactory
 $door = DoorFactory::makeDoor(100, 200);
-echo 'Width: ' . $door->getWidth();
-echo 'Height: ' . $door->getHeight();
+echo 'Width: ' . $door->getWidth().PHP_EOL;
+echo 'Height: ' . $door->getHeight().PHP_EOL;
 
 //Using HouseFactory
 $door = HouseFactory::makeHouse(4, 6);
-echo 'Count doors: ' . $door->getCountDoors();
-echo 'Count windows: ' . $door->getCountWindows();
+echo 'Count doors: ' . $door->getCountDoors().PHP_EOL;
+echo 'Count windows: ' . $door->getCountWindows().PHP_EOL;

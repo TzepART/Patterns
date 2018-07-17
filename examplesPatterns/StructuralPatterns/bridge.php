@@ -59,7 +59,7 @@ class About implements WebPage
      */
     public function getContent()
     {
-        return "About page in " . $this->theme->getColor();
+        return "About page in " . $this->theme->getColor().PHP_EOL;
     }
 }
 
@@ -88,7 +88,7 @@ class Careers implements WebPage
      */
     public function getContent()
     {
-        return "Careers page in " . $this->theme->getColor();
+        return "Careers page in " . $this->theme->getColor().PHP_EOL;
     }
 }
 
@@ -117,7 +117,7 @@ class DarkTheme implements Theme
      */
     public function getColor()
     {
-        return 'Dark Black';
+        return 'Dark Black'.PHP_EOL;
     }
 }
 
@@ -132,7 +132,7 @@ class LightTheme implements Theme
      */
     public function getColor()
     {
-        return 'Off white';
+        return 'Off white'.PHP_EOL;
     }
 }
 
@@ -147,7 +147,7 @@ class AquaTheme implements Theme
      */
     public function getColor()
     {
-        return 'Light blue';
+        return 'Light blue'.PHP_EOL;
     }
 }
 

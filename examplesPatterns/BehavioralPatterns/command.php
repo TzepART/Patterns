@@ -176,7 +176,6 @@ class TurnOff implements Command
 }
 
 // Invoker
-
 /**
  * Class RemoteControl
  * @package Patterns\BehavioralPatterns\Command

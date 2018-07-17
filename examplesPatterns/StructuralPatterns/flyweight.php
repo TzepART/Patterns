@@ -133,8 +133,7 @@ class TeaShop
     {
         /** @var Tea $tea */
         foreach ($this->orders as $table => $tea) {
-            echo "Serving tea to table# " . $table.". Using tea - ".$tea->getCountUsing();
-            echo "\n";
+            echo "Serving tea to table# " . $table.". Using tea - ".$tea->getCountUsing().PHP_EOL;
         }
     }
 }

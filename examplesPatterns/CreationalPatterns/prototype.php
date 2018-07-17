@@ -81,11 +81,11 @@ class Sheep
 
 //Using
 $original = new Sheep('Jolly');
-echo $original->getName(); // Jolly
-echo $original->getCategory(); // Mountain Sheep
+echo $original->getName().PHP_EOL; // Jolly
+echo $original->getCategory().PHP_EOL; // Mountain Sheep
 
 // Clone and modify, what you want
 $cloned = clone $original;
 $cloned->setName('Dolly');
-echo $cloned->getName(); // Dolly
-echo $cloned->getCategory(); // Mountain Sheep
+echo $cloned->getName().PHP_EOL; // Dolly
+echo $cloned->getCategory().PHP_EOL; // Mountain Sheep

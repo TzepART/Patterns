@@ -111,7 +111,7 @@ class ComputerFacade
         $this->computer->makeSound();
         $this->computer->showLoadingScreen();
         $this->computer->bam();
-        echo "\n";
+        echo PHP_EOL;
     }
 
     /**
@@ -122,7 +122,7 @@ class ComputerFacade
         $this->computer->closeEverything();
         $this->computer->pullCurrent();
         $this->computer->sooth();
-        echo "\n";
+        echo PHP_EOL;
     }
 }
 

@@ -41,7 +41,7 @@ class PlasticDoor implements DoorInterface
      */
     public function getDescription()
     {
-        echo 'I am a plastic door';
+        echo 'I am a plastic door'. PHP_EOL;
     }
 }
 
@@ -56,7 +56,7 @@ class IronDoor implements DoorInterface
      */
     public function getDescription()
     {
-        echo 'I am an iron door';
+        echo 'I am an iron door'. PHP_EOL;
     }
 }
 
@@ -85,7 +85,7 @@ class PlasticMaster implements DoorFittingExpert
      */
     public function getDescription()
     {
-        echo 'I can only plastic wooden doors';
+        echo 'I can only plastic wooden doors'. PHP_EOL;
     }
 }
 
@@ -100,7 +100,7 @@ class Welder implements DoorFittingExpert
      */
     public function getDescription()
     {
-        echo 'I can only fit iron doors';
+        echo 'I can only fit iron doors'. PHP_EOL;
     }
 }
 

@@ -58,7 +58,7 @@ class Hammer extends Tool{
      */
     public function makeAction()
     {
-        echo "Bam Bam Bam!!!";
+        echo "Bam Bam Bam!!!". PHP_EOL;
     }
 
 }
@@ -73,7 +73,7 @@ class Saw extends Tool{
      */
     public function makeAction()
     {
-        echo "Vzhzhzhzh!!!";
+        echo "Vzhzhzhzh!!!". PHP_EOL;
     }
 
 }

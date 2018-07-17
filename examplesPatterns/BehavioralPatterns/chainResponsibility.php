@@ -152,8 +152,7 @@ $paypal->setNext($bitcoin);
 try{
     $bank->pay(259);
 }catch (\Exception $exception){
-    echo $exception->getMessage();
-    echo "\n";
+    echo $exception->getMessage(). PHP_EOL;
 }
 
 // Output

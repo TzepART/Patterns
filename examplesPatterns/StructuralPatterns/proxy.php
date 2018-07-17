@@ -50,8 +50,7 @@ class SecretDoor implements Door
      */
     public function open()
     {
-        echo "Opening secret door";
-        echo "\n";
+        echo "Opening secret door".PHP_EOL;
     }
 
     /**
@@ -59,8 +58,7 @@ class SecretDoor implements Door
      */
     public function close()
     {
-        echo "Closing the secret door";
-        echo "\n";
+        echo "Closing the secret door".PHP_EOL;
     }
 }
 
@@ -94,8 +92,7 @@ class Security
         if ($this->authenticate($password)) {
             $this->door->open();
         } else {
-            echo "Big no! It isn't possible.";
-            echo "\n";
+            echo "Big no! It isn't possible.".PHP_EOL;
         }
     }
 

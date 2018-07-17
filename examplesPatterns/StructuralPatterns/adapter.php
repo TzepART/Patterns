@@ -74,7 +74,6 @@ class Hunter
 }
 
 //Now create rabbit. It does not implement Bear interface, but the hunter can hunt the rabbit
-
 /**
  * Class Rabbit
  * @package Patterns\StructuralPatterns\Adapter
@@ -90,7 +89,6 @@ class Rabbit{
 }
 
 //Create adapter around Rabbit
-
 /**
  * Class RabbitAdapter
  * @package Patterns\StructuralPatterns\Adapter

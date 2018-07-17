@@ -228,14 +228,12 @@ class CDirectory extends Component
      */
     public function showChildsTree($level = 0)
     {
-        echo "\n";
-        echo str_repeat(' ', $level) . $this->getName();
+        echo str_repeat(' ', $level) . $this->getName().PHP_EOL;
         foreach ($this->getChilds() as $child) {
             if ($child instanceof self) {
                 $child->showChildsTree($level + 1);
             } else {
-                echo "\n";
-                echo str_repeat(' ', $level + 1) . $child->getName();
+                echo str_repeat(' ', $level + 1) . $child->getName().PHP_EOL;
             }
         }
     }
