@@ -21,7 +21,6 @@ use Iterator;
  */
 
 
-
 //Example
 //Step 1. Add RadioStation
 /**
@@ -147,4 +146,7 @@ foreach($stationList as $station) {
     echo $station->getFrequency() . PHP_EOL;
 }
 
+echo 'Count before remove - '.$stationList->count() . PHP_EOL;
 $stationList->removeStation(new RadioStation(89)); // Will remove station 89
+echo 'Count after remove - '.$stationList->count() . PHP_EOL;
+
