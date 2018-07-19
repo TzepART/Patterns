@@ -25,10 +25,6 @@ namespace Patterns\BehavioralPatterns\Visitor;
  * Interface Animal
  * @package Patterns\BehavioralPatterns\Visitor
  */
-/**
- * Interface Animal
- * @package Patterns\BehavioralPatterns\Visitor
- */
 interface Animal
 {
     /**
