@@ -34,3 +34,4 @@ It's simple project with examples of patterns on PHP
 - [Observer](https://github.com/TzepART/patterns/blob/master/examplesPatterns/BehavioralPatterns/observer.php)
 - [Visitor](https://github.com/TzepART/patterns/blob/master/examplesPatterns/BehavioralPatterns/visitor.php)
 - [State](https://github.com/TzepART/patterns/blob/master/examplesPatterns/BehavioralPatterns/state.php)
+- [Template method](https://github.com/TzepART/patterns/blob/master/examplesPatterns/BehavioralPatterns/templateMethod.php)
