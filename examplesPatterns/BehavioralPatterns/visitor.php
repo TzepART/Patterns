@@ -25,6 +25,10 @@ namespace Patterns\BehavioralPatterns\Visitor;
  * Interface Animal
  * @package Patterns\BehavioralPatterns\Visitor
  */
+/**
+ * Interface Animal
+ * @package Patterns\BehavioralPatterns\Visitor
+ */
 interface Animal
 {
     /**
@@ -179,5 +183,54 @@ $monkey->accept($speak);  //Ooh oo aa aa!
 $lion->accept($speak);    //Roaaar!
 $dolphin->accept($speak); //Tuut tuttu tuutt!
 
+/*
+ * We could do this simply by using the inheritance hierarchy, but then we would have to modify
+ * the animals each time you added new actions to them. And here you do not need to change them.
+ * For example, we can add jumping to animals by simply creating a new visitor:
+ */
 
+/**
+ * Class Jump
+ * @package Patterns\BehavioralPatterns\Visitor
+ */
+class Jump implements AnimalOperation
+{
+    /**
+     * @param Monkey $monkey
+     * @return mixed|void
+     */
+    public function visitMonkey(Monkey $monkey)
+    {
+        echo 'Jumped 20 feet high! on to the tree!'.PHP_EOL;
+    }
 
+    /**
+     * @param Lion $lion
+     * @return mixed|void
+     */
+    public function visitLion(Lion $lion)
+    {
+        echo 'Jumped 7 feet! Back on the ground!'.PHP_EOL;
+    }
+
+    /**
+     * @param Dolphin $dolphin
+     * @return mixed|void
+     */
+    public function visitDolphin(Dolphin $dolphin)
+    {
+        echo 'Walked on water a little and disappeared'.PHP_EOL;
+    }
+}
+
+//Using
+$jump = new Jump();
+
+$monkey->accept($speak);   // Ooh oo aa aa!
+$monkey->accept($jump);    // Jumped 20 feet high! on to the tree!
+
+$lion->accept($speak);     // Roaaar!
+$lion->accept($jump);      // Jumped 7 feet! Back on the ground!
+
+$dolphin->accept($speak);  // Tuut tutt tuutt!
+$dolphin->accept($jump);   // Walked on water a little and disappeared
