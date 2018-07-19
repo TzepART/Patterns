@@ -32,3 +32,4 @@ It's simple project with examples of patterns on PHP
 - [Mediator](https://github.com/TzepART/patterns/blob/master/examplesPatterns/BehavioralPatterns/mediator.php)
 - [Memento](https://github.com/TzepART/patterns/blob/master/examplesPatterns/BehavioralPatterns/memento.php)
 - [Observer](https://github.com/TzepART/patterns/blob/master/examplesPatterns/BehavioralPatterns/observer.php)
+- [Visitor](https://github.com/TzepART/patterns/blob/master/examplesPatterns/BehavioralPatterns/visitor.php)
