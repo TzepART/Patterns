@@ -39,13 +39,18 @@ It's simple project with examples of patterns on PHP
 
 [Behavioral Patterns](https://github.com/TzepART/patterns/blob/master/examplesPatterns/BehavioralPatterns)
 =========================================================================================================
-- [Strategy](https://github.com/TzepART/patterns/blob/master/examplesPatterns/BehavioralPatterns/strategy.php)
-- [Chain Responsibility](https://github.com/TzepART/patterns/blob/master/examplesPatterns/BehavioralPatterns/chainResponsibility.php)
-- [Command](https://github.com/TzepART/patterns/blob/master/examplesPatterns/BehavioralPatterns/command.php)
-- [Iterator](https://github.com/TzepART/patterns/blob/master/examplesPatterns/BehavioralPatterns/iterator.php)
-- [Mediator](https://github.com/TzepART/patterns/blob/master/examplesPatterns/BehavioralPatterns/mediator.php)
-- [Memento](https://github.com/TzepART/patterns/blob/master/examplesPatterns/BehavioralPatterns/memento.php)
-- [Observer](https://github.com/TzepART/patterns/blob/master/examplesPatterns/BehavioralPatterns/observer.php)
-- [Visitor](https://github.com/TzepART/patterns/blob/master/examplesPatterns/BehavioralPatterns/visitor.php)
-- [State](https://github.com/TzepART/patterns/blob/master/examplesPatterns/BehavioralPatterns/state.php)
-- [Template method](https://github.com/TzepART/patterns/blob/master/examplesPatterns/BehavioralPatterns/templateMethod.php)
+*Поведенческие шаблоны (Behavioral) определяют взаимодействие между объектами, увеличивая таким образом его гибкость.*
+
+| Название | Оригинальное название | Описание |
+| -------- | --------------------- | -------- |
+| Цепочка обязанностей	| [Chain Responsibility](https://github.com/TzepART/patterns/blob/master/examplesPatterns/BehavioralPatterns/chainResponsibility.php)	| Предназначен для организации в системе уровней ответственности. |
+| Команда, Action, Transaction	| [Command](https://github.com/TzepART/patterns/blob/master/examplesPatterns/BehavioralPatterns/command.php)	| Представляет действие. Объект команды заключает в себе само действие и его параметры. |
+| Итератор, Cursor	| [Iterator](https://github.com/TzepART/patterns/blob/master/examplesPatterns/BehavioralPatterns/iterator.php)	| Представляет собой объект, позволяющий получить последовательный доступ к элементам объекта-агрегата без использования описаний каждого из объектов, входящих в состав агрегации. |
+| Посредник	| [Mediator](https://github.com/TzepART/patterns/blob/master/examplesPatterns/BehavioralPatterns/mediator.php)	| Обеспечивает взаимодействие множества объектов, формируя при этом слабую связанность и избавляя объекты от необходимости явно ссылаться друг на друга. |
+| Хранитель	| [Memento](https://github.com/TzepART/patterns/blob/master/examplesPatterns/BehavioralPatterns/memento.php)	| Позволяет не нарушая инкапсуляцию зафиксировать и сохранить внутренние состояния объекта так, чтобы позднее восстановить его в этих состояниях. |
+| Наблюдатель или Издатель-подписчик	| [Observer](https://github.com/TzepART/patterns/blob/master/examplesPatterns/BehavioralPatterns/observer.php)	| Определяет зависимость типа «один ко многим» между объектами таким образом, что при изменении состояния одного объекта все зависящие от него оповещаются об этом событии. |
+| Состояние	| [State](https://github.com/TzepART/patterns/blob/master/examplesPatterns/BehavioralPatterns/state.php)	| Используется в тех случаях, когда во время выполнения программы объект должен менять своё поведение в зависимости от своего состояния. |
+| Стратегия	| [Strategy](https://github.com/TzepART/patterns/blob/master/examplesPatterns/BehavioralPatterns/strategy.php)	| Предназначен для определения семейства алгоритмов, инкапсуляции каждого из них и обеспечения их взаимозаменяемости. |
+| Шаблонный метод	| [Template method](https://github.com/TzepART/patterns/blob/master/examplesPatterns/BehavioralPatterns/templateMethod.php)	| Определяет основу алгоритма и позволяет наследникам переопределять некоторые шаги алгоритма, не изменяя его структуру в целом. |
+| Посетитель	| [Visitor](https://github.com/TzepART/patterns/blob/master/examplesPatterns/BehavioralPatterns/visitor.php)	| Описывает операцию, которая выполняется над объектами других классов. При изменении класса Visitor нет необходимости изменять обслуживаемые классы. |
+| Интерпретатор | Interpreter | Решает часто встречающуюся, но подверженную изменениям, задачу. |
