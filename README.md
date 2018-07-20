@@ -4,20 +4,17 @@ It's simple project with examples of patterns on PHP
 
 [Creational Patterns](https://github.com/TzepART/patterns/blob/master/examplesPatterns/CreationalPatterns)
 ====================================================================================================================
-- [Simple Factory](https://github.com/TzepART/patterns/blob/master/examplesPatterns/CreationalPatterns/simpleFactory.php)
-- [Factory Method](https://github.com/TzepART/patterns/blob/master/examplesPatterns/CreationalPatterns/factoryMethod.php)
-- [Abstract Factory](https://github.com/TzepART/patterns/blob/master/examplesPatterns/CreationalPatterns/abstractFactory.php)
-- [Builder](https://github.com/TzepART/patterns/blob/master/examplesPatterns/CreationalPatterns/builder.php)
-- [Prototype](https://github.com/TzepART/patterns/blob/master/examplesPatterns/CreationalPatterns/prototype.php)
-- [Singleton](https://github.com/TzepART/patterns/blob/master/examplesPatterns/CreationalPatterns/singleton.php)
 
 | Название | Оригинальное название | Описание |
 | -------- | --------------------- | -------- |
-| Абстрактная фабрика | Abstract factory | Класс, который представляет собой интерфейс для создания компонентов системы.|
-| Строитель | Builder | Класс, который представляет собой интерфейс для создания сложного объекта. |
-| Фабричный метод | Factory method | Определяет интерфейс для создания объекта, но оставляет подклассам решение о том, какой класс инстанцировать. |
+| Простая фабрика | [Simple Factory](https://github.com/TzepART/patterns/blob/master/examplesPatterns/CreationalPatterns/simpleFactory.php) | Простая фабрика просто генерирует экземпляр для клиента без предоставления какой-либо логики экземпляра. |
+| Фабричный метод | [Factory Method](https://github.com/TzepART/patterns/blob/master/examplesPatterns/CreationalPatterns/factoryMethod.php) | Определяет интерфейс для создания объекта, но оставляет подклассам решение о том, какой класс инстанцировать. |
+| Абстрактная фабрика | [Abstract Factory](https://github.com/TzepART/patterns/blob/master/examplesPatterns/CreationalPatterns/abstractFactory.php) | Класс, который представляет собой интерфейс для создания компонентов системы.|
+| Строитель | [Builder](https://github.com/TzepART/patterns/blob/master/examplesPatterns/CreationalPatterns/builder.php) | Класс, который представляет собой интерфейс для создания сложного объекта. |
+| Прототип | [Prototype](https://github.com/TzepART/patterns/blob/master/examplesPatterns/CreationalPatterns/prototype.php) | Определяет интерфейс создания объекта через клонирование другого объекта вместо создания через конструктор. |
+| Одиночка | [Singleton](https://github.com/TzepART/patterns/blob/master/examplesPatterns/CreationalPatterns/singleton.php) | Шаблон позволяет удостовериться, что создаваемый объект — единственный в своём классе. |
 | Отложенная инициализация | Lazy initialization | Объект, инициализируемый во время первого обращения к нему. |
-| Прототип | Prototype | Определяет интерфейс создания объекта через клонирование другого объекта вместо создания через конструктор. |
+
 
 [Structural Patterns](https://github.com/TzepART/patterns/blob/master/examplesPatterns/StructuralPatterns)
 =========================================================================================================
