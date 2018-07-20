@@ -11,6 +11,13 @@ It's simple project with examples of patterns on PHP
 - [Prototype](https://github.com/TzepART/patterns/blob/master/examplesPatterns/CreationalPatterns/prototype.php)
 - [Singleton](https://github.com/TzepART/patterns/blob/master/examplesPatterns/CreationalPatterns/singleton.php)
 
+| Название | Оригинальное название | Описание |
+| -------- | --------------------- | -------- |
+| Абстрактная фабрика | Abstract factory | Класс, который представляет собой интерфейс для создания компонентов системы.|
+| Строитель | Builder | Класс, который представляет собой интерфейс для создания сложного объекта. |
+| Фабричный метод | Factory method | Определяет интерфейс для создания объекта, но оставляет подклассам решение о том, какой класс инстанцировать. |
+| Отложенная инициализация | Lazy initialization | Объект, инициализируемый во время первого обращения к нему. |
+| Прототип | Prototype | Определяет интерфейс создания объекта через клонирование другого объекта вместо создания через конструктор. |
 
 [Structural Patterns](https://github.com/TzepART/patterns/blob/master/examplesPatterns/StructuralPatterns)
 =========================================================================================================
