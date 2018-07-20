@@ -4,6 +4,9 @@ It's simple project with examples of patterns on PHP
 
 [Creational Patterns](https://github.com/TzepART/patterns/blob/master/examplesPatterns/CreationalPatterns)
 ====================================================================================================================
+*Порождающие шаблоны (Creational) — шаблоны проектирования, которые абстрагируют процесс инстанцирования. Они позволяют 
+сделать систему независимой от способа создания, композиции и представления объектов. Шаблон, порождающий классы, использует 
+наследование, чтобы изменять инстанцируемый класс, а шаблон, порождающий объекты, делегирует инстанцирование другому объекту.*
 
 | Название | Оригинальное название | Описание |
 | -------- | --------------------- | -------- |
@@ -18,13 +21,20 @@ It's simple project with examples of patterns on PHP
 
 [Structural Patterns](https://github.com/TzepART/patterns/blob/master/examplesPatterns/StructuralPatterns)
 =========================================================================================================
-- [Adapter](https://github.com/TzepART/patterns/blob/master/examplesPatterns/StructuralPatterns/adapter.php)
-- [Bridge](https://github.com/TzepART/patterns/blob/master/examplesPatterns/StructuralPatterns/bridge.php)
-- [Composite](https://github.com/TzepART/patterns/blob/master/examplesPatterns/StructuralPatterns/composite.php)
-- [Decorator](https://github.com/TzepART/patterns/blob/master/examplesPatterns/StructuralPatterns/decorator.php)
-- [Facade](https://github.com/TzepART/patterns/blob/master/examplesPatterns/StructuralPatterns/facade.php)
-- [Flyweight](https://github.com/TzepART/patterns/blob/master/examplesPatterns/StructuralPatterns/flyweight.php)
-- [Proxy](https://github.com/TzepART/patterns/blob/master/examplesPatterns/StructuralPatterns/proxy.php)
+*Структурные шаблоны (Structural) определяют различные сложные структуры, которые изменяют интерфейс уже существующих 
+объектов или его реализацию, позволяя облегчить разработку и оптимизировать программу.*
+
+| Название | Оригинальное название | Описание |
+| -------- | --------------------- | -------- |
+| Адаптер	| [Adapter](https://github.com/TzepART/patterns/blob/master/examplesPatterns/StructuralPatterns/adapter.php) | Объект, обеспечивающий взаимодействие двух других объектов, один из которых использует, а другой предоставляет несовместимый с первым интерфейс. |
+| Мост	| [Bridge](https://github.com/TzepART/patterns/blob/master/examplesPatterns/StructuralPatterns/bridge.php) | Структура, позволяющая изменять интерфейс обращения и интерфейс реализации класса независимо. |
+| Компоновщик	| [Composite](https://github.com/TzepART/patterns/blob/master/examplesPatterns/StructuralPatterns/composite.php) |	Объект, который объединяет в себе объекты, подобные ему самому. |
+| Декоратор или Wrapper/Обёртка | [Decorator](https://github.com/TzepART/patterns/blob/master/examplesPatterns/StructuralPatterns/decorator.php) | Класс, расширяющий функциональность другого класса без использования наследования. |
+| Фасад	| [Facade](https://github.com/TzepART/patterns/blob/master/examplesPatterns/StructuralPatterns/facade.php) | Объект, который абстрагирует работу с несколькими классами, объединяя их в единое целое. |
+| Приспособленец | [Flyweight](https://github.com/TzepART/patterns/blob/master/examplesPatterns/StructuralPatterns/flyweight.php) | Это объект, представляющий себя как уникальный экземпляр в разных местах программы, но фактически не являющийся таковым. |
+| Заместитель	| [Proxy](https://github.com/TzepART/patterns/blob/master/examplesPatterns/StructuralPatterns/proxy.php) | Объект, который является посредником между двумя другими объектами, и который реализует/ограничивает доступ к объекту, к которому обращаются через него |
+| Единая точка входа | Front controller | Обеспечивает унифицированный интерфейс для интерфейсов в подсистеме. Front Controller определяет высокоуровневый интерфейс, упрощающий использование подсистемы. |	
+
 
 
 [Behavioral Patterns](https://github.com/TzepART/patterns/blob/master/examplesPatterns/BehavioralPatterns)
