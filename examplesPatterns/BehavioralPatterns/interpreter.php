@@ -17,15 +17,31 @@ namespace Patterns\BehavioralPatterns\Interpreter;
 //the grammar of the language.
 
 //Step 1.
+/**
+ * Class Expression
+ * @package Patterns\BehavioralPatterns\Interpreter
+ */
 abstract class Expression
 {
-
+    /**
+     * @var int
+     */
     private static $count = 0;
 
+    /**
+     * @var null
+     */
     private $key = null;
 
+    /**
+     * @param InterpreterContext $context
+     * @return mixed
+     */
     public abstract function interpret(InterpreterContext $context);
 
+    /**
+     * @return int|null
+     */
     public function getKey()
     {
         if (!isset($this->key)) {
@@ -38,15 +54,30 @@ abstract class Expression
 }
 
 //Step 2.
+/**
+ * Class LiteralExpression
+ * @package Patterns\BehavioralPatterns\Interpreter
+ */
 class LiteralExpression extends Expression
 {
+    /**
+     * @var null
+     */
     private $value = null;
 
+    /**
+     * LiteralExpression constructor.
+     * @param $value
+     */
     public function __construct($value)
     {
         $this->value = $value;
     }
 
+    /**
+     * @param InterpreterContext $context
+     * @return mixed|void
+     */
     public function interpret(InterpreterContext $context)
     {
         $context->replace($this, $this->value);
@@ -54,30 +85,55 @@ class LiteralExpression extends Expression
 
 }
 
+/**
+ * Class VariableExpression
+ * @package Patterns\BehavioralPatterns\Interpreter
+ */
 class VariableExpression extends Expression
 {
 
+    /**
+     * @var null
+     */
     private $name = null;
 
+    /**
+     * @var null
+     */
     private $val = null;
 
+    /**
+     * VariableExpression constructor.
+     * @param $name
+     * @param null $val
+     */
     public function __construct($name, $val = null)
     {
         $this->name = $name;
         $this->val = $val;
     }
 
+    /**
+     * @param InterpreterContext $context
+     * @return mixed|void
+     */
     public function interpret(InterpreterContext $context)
     {
         if (!is_null($this->val))
             $context->replace($this, $this->val);
     }
 
+    /**
+     * @param $value
+     */
     public function setValue($value)
     {
         $this->val = $value;
     }
 
+    /**
+     * @return int|null
+     */
     public function getKey()
     {
         return $this->name;
@@ -86,19 +142,38 @@ class VariableExpression extends Expression
 }
 
 //Step 3.
+/**
+ * Class OperatorExpression
+ * @package Patterns\BehavioralPatterns\Interpreter
+ */
 abstract class OperatorExpression extends Expression
 {
 
+    /**
+     * @var null|Expression
+     */
     protected $leftOperand = null;
 
+    /**
+     * @var null|Expression
+     */
     protected $rightOperand = null;
 
+    /**
+     * OperatorExpression constructor.
+     * @param Expression $leftOperand
+     * @param Expression $rightOperand
+     */
     public function __construct(Expression $leftOperand, Expression $rightOperand)
     {
         $this->leftOperand = $leftOperand;
         $this->rightOperand = $rightOperand;
     }
 
+    /**
+     * @param InterpreterContext $context
+     * @return $this|mixed
+     */
     public function interpret(InterpreterContext $context)
     {
         $this->leftOperand->interpret($context);
@@ -109,14 +184,30 @@ abstract class OperatorExpression extends Expression
         return $this;
     }
 
+    /**
+     * @param InterpreterContext $context
+     * @param $resultLeft
+     * @param $resultRight
+     * @return mixed
+     */
     protected abstract function doInterpret(InterpreterContext $context, $resultLeft, $resultRight);
 
 }
 
 //Step 4.
+/**
+ * Class EqualsExpression
+ * @package Patterns\BehavioralPatterns\Interpreter
+ */
 class EqualsExpression extends OperatorExpression
 {
 
+    /**
+     * @param InterpreterContext $context
+     * @param $resultLeft
+     * @param $resultRight
+     * @return $this|mixed
+     */
     protected function doInterpret(InterpreterContext $context, $resultLeft, $resultRight)
     {
         $context->replace($this, $resultLeft == $resultRight);
@@ -125,9 +216,19 @@ class EqualsExpression extends OperatorExpression
 
 }
 
+/**
+ * Class BooleanOrExpression
+ * @package Patterns\BehavioralPatterns\Interpreter
+ */
 class BooleanOrExpression extends OperatorExpression
 {
 
+    /**
+     * @param InterpreterContext $context
+     * @param $resultLeft
+     * @param $resultRight
+     * @return $this|mixed
+     */
     protected function doInterpret(InterpreterContext $context, $resultLeft, $resultRight)
     {
         $context->replace($this, $resultLeft || $resultRight);
@@ -136,9 +237,19 @@ class BooleanOrExpression extends OperatorExpression
 
 }
 
+/**
+ * Class BooleanAndExpression
+ * @package Patterns\BehavioralPatterns\Interpreter
+ */
 class BooleanAndExpression extends OperatorExpression
 {
 
+    /**
+     * @param InterpreterContext $context
+     * @param $resultLeft
+     * @param $resultRight
+     * @return $this|mixed
+     */
     protected function doInterpret(InterpreterContext $context, $resultLeft, $resultRight)
     {
         $context->replace($this, $resultLeft && $resultRight);
@@ -148,17 +259,33 @@ class BooleanAndExpression extends OperatorExpression
 }
 
 //Step 5.
+/**
+ * Class InterpreterContext
+ * @package Patterns\BehavioralPatterns\Interpreter
+ */
 class InterpreterContext
 {
 
+    /**
+     * @var array
+     */
     private $expressionStore = [];
 
+    /**
+     * @param Expression $exp
+     * @param $value
+     * @return $this
+     */
     public function replace(Expression $exp, $value)
     {
         $this->expressionStore[$exp->getKey()] = $value;
         return $this;
     }
 
+    /**
+     * @param Expression $exp
+     * @return mixed
+     */
     public function lookup(Expression $exp)
     {
         return $this->expressionStore[$exp->getKey()];
