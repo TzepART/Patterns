@@ -53,4 +53,4 @@ It's simple project with examples of patterns on PHP
 | Стратегия	| [Strategy](https://github.com/TzepART/patterns/blob/master/examplesPatterns/BehavioralPatterns/strategy.php)	| Предназначен для определения семейства алгоритмов, инкапсуляции каждого из них и обеспечения их взаимозаменяемости. |
 | Шаблонный метод	| [Template method](https://github.com/TzepART/patterns/blob/master/examplesPatterns/BehavioralPatterns/templateMethod.php)	| Определяет основу алгоритма и позволяет наследникам переопределять некоторые шаги алгоритма, не изменяя его структуру в целом. |
 | Посетитель	| [Visitor](https://github.com/TzepART/patterns/blob/master/examplesPatterns/BehavioralPatterns/visitor.php)	| Описывает операцию, которая выполняется над объектами других классов. При изменении класса Visitor нет необходимости изменять обслуживаемые классы. |
-| Интерпретатор | Interpreter | Решает часто встречающуюся, но подверженную изменениям, задачу. |
+| Интерпретатор | [Interpreter](https://github.com/TzepART/patterns/blob/master/examplesPatterns/BehavioralPatterns/interpreter.php) | Решает часто встречающуюся, но подверженную изменениям, задачу. |
