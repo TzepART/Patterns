@@ -13,142 +13,172 @@ namespace Patterns\BehavioralPatterns\Interpreter;
  * но подверженную изменениям, задачу. Также известен как Little (Small) Language
  */
 
-//Example
+//Example. The task of searching for lines by pattern can be solved by creating an interpreter that defines
+//the grammar of the language.
 
 //Step 1.
-abstract class Expression {
+abstract class Expression
+{
 
-    private static $_count = 0;
-    private $_key = null;
+    private static $count = 0;
 
-    public abstract function interpret( InterpreterContext $context );
+    private $key = null;
 
-    public function getKey()  {
-        if( !isset( $this->_key ) ) {
-            self::$_count++;
-            $this->_key = self::$_count;
+    public abstract function interpret(InterpreterContext $context);
+
+    public function getKey()
+    {
+        if (!isset($this->key)) {
+            self::$count++;
+            $this->key = self::$count;
         }
-        return $this->_key;
+        return $this->key;
     }
 
 }
 
 //Step 2.
-class LiteralExpression extends Expression  {
+class LiteralExpression extends Expression
+{
+    private $value = null;
 
-    private $_value = null;
-
-    public function __construct( $value ) {
-        $this->_value = $value;
+    public function __construct($value)
+    {
+        $this->value = $value;
     }
 
-    public function interpret( InterpreterContext $context ) {
-        $context->replace( $this, $this->_value );
+    public function interpret(InterpreterContext $context)
+    {
+        $context->replace($this, $this->value);
     }
 
 }
 
-class VariableExpression extends Expression {
+class VariableExpression extends Expression
+{
 
-    private $_name = null;
-    private $_val = null;
+    private $name = null;
 
-    public function __construct( $name, $val = null ) {
-        $this->_name = $name;
-        $this->_val = $val;
+    private $val = null;
+
+    public function __construct($name, $val = null)
+    {
+        $this->name = $name;
+        $this->val = $val;
     }
 
-    public function interpret( InterpreterContext $context ) {
-        if( !is_null( $this->_val ) )
-            $context->replace( $this, $this->_val );
+    public function interpret(InterpreterContext $context)
+    {
+        if (!is_null($this->val))
+            $context->replace($this, $this->val);
     }
 
-    public function setValue( $value )  {
-        $this->_val = $value;
+    public function setValue($value)
+    {
+        $this->val = $value;
     }
 
-    public function getKey()  {
-        return $this->_name;
+    public function getKey()
+    {
+        return $this->name;
     }
 
 }
 
 //Step 3.
-abstract class OperatorExpression extends Expression {
+abstract class OperatorExpression extends Expression
+{
 
-    protected $leftoperand = null;
-    protected $rightoperand = null;
+    protected $leftOperand = null;
 
-    public function __construct( Expression $leftoperand, Expression $rightoperand )  {
-        $this->leftoperand = $leftoperand;
-        $this->rightoperand = $rightoperand;
+    protected $rightOperand = null;
+
+    public function __construct(Expression $leftOperand, Expression $rightOperand)
+    {
+        $this->leftOperand = $leftOperand;
+        $this->rightOperand = $rightOperand;
     }
 
-    public function interpret( InterpreterContext $context ) {
-        $this->leftoperand->interpret( $context );
-        $this->rightoperand->interpret( $context );
-        $resultleft = $context->lookup( $this->leftoperand );
-        $resultright = $context->lookup( $this->rightoperand );
-        $this->doInterpret( $context, $resultleft, $resultright );
+    public function interpret(InterpreterContext $context)
+    {
+        $this->leftOperand->interpret($context);
+        $this->rightOperand->interpret($context);
+        $resultLeft = $context->lookup($this->leftOperand);
+        $resultRight = $context->lookup($this->rightOperand);
+        $this->doInterpret($context, $resultLeft, $resultRight);
+        return $this;
     }
 
-    protected abstract function doInterpret( InterpreterContext $context, $resultleft, $resultright );
+    protected abstract function doInterpret(InterpreterContext $context, $resultLeft, $resultRight);
 
 }
 
 //Step 4.
-class EqualsExpression extends OperatorExpression {
+class EqualsExpression extends OperatorExpression
+{
 
-    protected function doInterpret( InterpreterContext $context, $resultleft, $resultright )  {
-        $context->replace( $this, $resultleft == $resultright );
+    protected function doInterpret(InterpreterContext $context, $resultLeft, $resultRight)
+    {
+        $context->replace($this, $resultLeft == $resultRight);
+        return $this;
     }
 
 }
 
-class BooleanOrExpression extends OperatorExpression {
+class BooleanOrExpression extends OperatorExpression
+{
 
-    protected function doInterpret( InterpreterContext $context, $resultleft, $resultright )  {
-        $context->replace( $this, $resultleft || $resultright );
+    protected function doInterpret(InterpreterContext $context, $resultLeft, $resultRight)
+    {
+        $context->replace($this, $resultLeft || $resultRight);
+        return $this;
     }
 
 }
 
-class BooleanAndExpression extends OperatorExpression {
+class BooleanAndExpression extends OperatorExpression
+{
 
-    protected function doInterpret( InterpreterContext $context, $resultleft, $resultright )  {
-        $context->replace( $this, $resultleft && $resultright );
+    protected function doInterpret(InterpreterContext $context, $resultLeft, $resultRight)
+    {
+        $context->replace($this, $resultLeft && $resultRight);
+        return $this;
     }
 
 }
 
 //Step 5.
-class InterpreterContext {
+class InterpreterContext
+{
 
-    private $_expressionstore = [];
+    private $expressionStore = [];
 
-    public function replace( Expression $exp, $value ) {
-        $this->_expressionstore[$exp->getKey()] = $value;
+    public function replace(Expression $exp, $value)
+    {
+        $this->expressionStore[$exp->getKey()] = $value;
+        return $this;
     }
 
-    public function lookup( Expression $exp )  {
-        return $this->_expressionstore[$exp->getKey()];
+    public function lookup(Expression $exp)
+    {
+        return $this->expressionStore[$exp->getKey()];
     }
 
 }
 
 //Using
 $context = new InterpreterContext();
-$input = new VariableExpression( 'input' );
+$input = new VariableExpression('input');
 $statement = new BooleanOrExpression(
-    new EqualsExpression( $input, new LiteralExpression( "four" ) ),
-    new EqualsExpression( $input, new LiteralExpression( "4" ) )
+    new EqualsExpression($input, new LiteralExpression("four")),
+    new EqualsExpression($input, new LiteralExpression("4"))
 );
 
-foreach( ["four", "4", "52" ] as $value ) {
-    $input->setValue( $value );
-    echo $value.PHP_EOL;
-    $statement->interpret( $context );
-    echo $context->lookup( $statement )
+foreach (["four", "4", "52"] as $value) {
+    $input->setValue($value);
+    echo $value . PHP_EOL;
+    $statement->interpret($context);
+    echo $context->lookup($statement)
         ? "Match"
         : "No match";
 }
