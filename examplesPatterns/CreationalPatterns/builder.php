@@ -19,137 +19,197 @@ namespace Patterns\CreationalPatterns\Builder;
  * Ключевое отличие от шаблона «Простая фабрика»: он используется в одноэтапном создании, а «Строитель» — в многоэтапном.
  */
 
-// Add builder for entity CheeseBurger
+// Add builder for Film
 /**
- * Class CheeseBurgerBuilder
+ * Class FilmBuilder
  * @package Patterns\CreationalPatterns\Builder
  */
-class CheeseBurgerBuilder
+class FilmBuilder
 {
-    /**
-     * @var int
-     */
-    public $size;
 
     /**
-     * @var bool
+     * @var string
      */
-    public $cheese = false;
-    /**
-     * @var bool
-     */
-    public $pepperoni = false;
-    /**
-     * @var bool
-     */
-    public $lettuce = false;
-    /**
-     * @var bool
-     */
-    public $tomato = false;
+    public $title;
 
     /**
-     * CheeseBurgerBuilder constructor.
-     * @param int $size
+     * @var string
      */
-    public function __construct(int $size)
+    public $director = "Unknown";
+
+    /**
+     * @var string
+     */
+    public $producer = "Unknown";
+
+    /**
+     * @var string
+     */
+    public $mainCharacter = "Unknown";
+
+    /**
+     * @var string
+     */
+    public $operator = "Unknown";
+
+    /**
+     * FilmBuilder constructor.
+     * @param $title
+     */
+    public function __construct(string $title)
     {
-        $this->size = $size;
+        $this->title = $title;
     }
 
+
     /**
+     * @param string $director
      * @return $this
      */
-    public function addPepperoni()
+    public function addDirector(string $director)
     {
-        $this->pepperoni = true;
+        $this->director = $director;
         return $this;
     }
 
     /**
+     * @param string $producer
      * @return $this
      */
-    public function addLettuce()
+    public function addProducer(string $producer)
     {
-        $this->lettuce = true;
+        $this->producer = $producer;
         return $this;
     }
 
     /**
+     * @param string $mainCharacter
      * @return $this
      */
-    public function addCheese()
+    public function addMainCharacter(string $mainCharacter)
     {
-        $this->cheese = true;
+        $this->mainCharacter = $mainCharacter;
         return $this;
     }
 
     /**
+     * @param string $operator
      * @return $this
      */
-    public function addTomato()
+    public function addOperator(string $operator)
     {
-        $this->tomato = true;
+        $this->operator = $operator;
         return $this;
     }
 
     /**
-     * @return CheeseBurger
+     * @return Film
      */
-    public function build(): CheeseBurger
+    public function build(): Film
     {
-        return new CheeseBurger($this);
+        return new Film($this);
     }
+
 }
 
-//Add class CheeseBurger, that use builder
-
+//Add class Film, that use builder
 /**
- * Class CheeseBurger
- * @package Patterns\CreationalPatterns\Builder
+ * Class Film
  */
-class CheeseBurger
+class Film
 {
-    /**
-     * @var int
-     */
-    protected $size;
 
     /**
-     * @var bool
+     * @var string
      */
-    protected $cheese = false;
-    /**
-     * @var bool
-     */
-    protected $pepperoni = false;
-    /**
-     * @var bool
-     */
-    protected $lettuce = false;
-    /**
-     * @var bool
-     */
-    protected $tomato = false;
+    private $title;
 
     /**
-     * CheeseBurger constructor.
-     * @param CheeseBurgerBuilder $builder
+     * @var string
      */
-    public function __construct(CheeseBurgerBuilder $builder)
+    private $director;
+
+    /**
+     * @var string
+     */
+    private $producer;
+
+    /**
+     * @var string
+     */
+    private $mainCharacter;
+
+    /**
+     * @var string
+     */
+    private $operator;
+
+    /**
+     * Film constructor.
+     * @param FilmBuilder $filmBuilder
+     */
+    public function __construct(FilmBuilder $filmBuilder)
     {
-        $this->size = $builder->size;
-        $this->cheese = $builder->cheese;
-        $this->pepperoni = $builder->pepperoni;
-        $this->lettuce = $builder->lettuce;
-        $this->tomato = $builder->tomato;
+        $this->title = $filmBuilder->title;
+        $this->director = $filmBuilder->director;
+        $this->producer = $filmBuilder->producer;
+        $this->mainCharacter = $filmBuilder->mainCharacter;
+        $this->operator = $filmBuilder->operator;
     }
+
+    /**
+     * @return string
+     */
+    public function getTitle(): string
+    {
+        return $this->title;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDirector(): string
+    {
+        return $this->director;
+    }
+
+    /**
+     * @return string
+     */
+    public function getProducer(): string
+    {
+        return $this->producer;
+    }
+
+    /**
+     * @return string
+     */
+    public function getMainCharacter(): string
+    {
+        return $this->mainCharacter;
+    }
+
+    /**
+     * @return string
+     */
+    public function getOperator(): string
+    {
+        return $this->operator;
+    }
+
 }
 
 //Using
-$burger = (new CheeseBurgerBuilder(14))
-    ->addPepperoni()
-    ->addLettuce()
-    ->addTomato()
+$film = (new FilmBuilder("Hello, Mars!"))
+    ->addDirector("Spilberg")
+    ->addMainCharacter("Crow")
     ->build();
 
+echo "This is new film!".PHP_EOL;
+echo sprintf("Film's name is %s, director is %s, main character is %s, producer is %s, operator is %s".PHP_EOL,
+    $film->getTitle(),
+    $film->getDirector(),
+    $film->getMainCharacter(),
+    $film->getProducer(),
+    $film->getOperator()
+);
