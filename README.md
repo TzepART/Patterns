@@ -1,7 +1,6 @@
 # Patterns
 It's simple project with examples of patterns on PHP
 
-
 [Creational Patterns](examplesPatterns/CreationalPatterns)
 ====================================================================================================================
 *Порождающие шаблоны (Creational) — шаблоны проектирования, которые абстрагируют процесс инстанцирования. Они позволяют 
