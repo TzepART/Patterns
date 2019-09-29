@@ -7,15 +7,15 @@ It's simple project with examples of patterns on PHP
 сделать систему независимой от способа создания, композиции и представления объектов. Шаблон, порождающий классы, использует 
 наследование, чтобы изменять инстанцируемый класс, а шаблон, порождающий объекты, делегирует инстанцирование другому объекту.*
 
-| Название | Оригинальное название | Описание |
+| Name | Description |
 | -------- | --------------------- | -------- |
-| Простая фабрика | [Simple Factory](examplesPatterns/CreationalPatterns/simpleFactory.php) | Простая фабрика просто генерирует экземпляр для клиента без предоставления какой-либо логики экземпляра. |
-| Фабричный метод | [Factory Method](examplesPatterns/CreationalPatterns/factoryMethod.php) | Определяет интерфейс для создания объекта, но оставляет подклассам решение о том, какой класс инстанцировать. |
-| Абстрактная фабрика | [Abstract Factory](examplesPatterns/CreationalPatterns/abstractFactory.php) | Класс, который представляет собой интерфейс для создания компонентов системы.|
-| Строитель | [Builder](examplesPatterns/CreationalPatterns/builder.php) | Класс, который представляет собой интерфейс для создания сложного объекта. **Предназначен для поиска решения проблемы антипаттерна Telescoping constructor.** |
-| Прототип | [Prototype](examplesPatterns/CreationalPatterns/prototype.php) | Определяет интерфейс создания объекта через клонирование другого объекта вместо создания через конструктор. |
-| Одиночка | [Singleton](examplesPatterns/CreationalPatterns/singleton.php) | Шаблон позволяет удостовериться, что создаваемый объект — единственный в своём классе. |
-| Отложенная инициализация | Lazy initialization | Объект, инициализируемый во время первого обращения к нему. |
+| [Simple Factory](examplesPatterns/CreationalPatterns/simpleFactory.php) | Простая фабрика просто генерирует экземпляр для клиента без предоставления какой-либо логики экземпляра. |
+| [Factory Method](examplesPatterns/CreationalPatterns/factoryMethod.php) | Определяет интерфейс для создания объекта, но оставляет подклассам решение о том, какой класс инстанцировать. |
+| [Abstract Factory](examplesPatterns/CreationalPatterns/abstractFactory.php) | Класс, который представляет собой интерфейс для создания компонентов системы.|
+| [Builder](examplesPatterns/CreationalPatterns/builder.php) | Класс, который представляет собой интерфейс для создания сложного объекта. **Предназначен для поиска решения проблемы антипаттерна Telescoping constructor.** |
+| [Prototype](examplesPatterns/CreationalPatterns/prototype.php) | Определяет интерфейс создания объекта через клонирование другого объекта вместо создания через конструктор. |
+| [Singleton](examplesPatterns/CreationalPatterns/singleton.php) | Шаблон позволяет удостовериться, что создаваемый объект — единственный в своём классе. |
+| Lazy initialization | Объект, инициализируемый во время первого обращения к нему. |
 
 
 [Structural Patterns](examplesPatterns/StructuralPatterns)
