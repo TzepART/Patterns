@@ -3,14 +3,14 @@ It's simple project with examples of patterns on PHP
 
 [Creational Patterns](examplesPatterns/CreationalPatterns)
 ====================================================================================================================
-*Generative patterns are design patterns that abstract the instantiation process. They allow making the system 
+*Creational patterns are design patterns that abstract the instantiation process. They allow making the system 
 independent of the method of creation, composition and presentation of objects. The template that creates 
 classes uses inheritance for modifying the instantiated class. The template that creates the objects delegates 
 the instantiation to another object.*
 
 | Name | Description |
 | -------- | ----------- |
-| [Simple Factory](examplesPatterns/CreationalPatterns/simpleFactory.php) | Простая фабрика просто генерирует экземпляр для клиента без предоставления какой-либо логики экземпляра. |
+| [Simple Factory](examplesPatterns/CreationalPatterns/simpleFactory.php) | A simple factory generates an instance only for the client and does it without providing any instance logic. |
 | [Factory Method](examplesPatterns/CreationalPatterns/factoryMethod.php) | Определяет интерфейс для создания объекта, но оставляет подклассам решение о том, какой класс инстанцировать. |
 | [Abstract Factory](examplesPatterns/CreationalPatterns/abstractFactory.php) | Класс, который представляет собой интерфейс для создания компонентов системы.|
 | [Builder](examplesPatterns/CreationalPatterns/builder.php) | Класс, который представляет собой интерфейс для создания сложного объекта. **Предназначен для поиска решения проблемы антипаттерна Telescoping constructor.** |
