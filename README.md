@@ -3,9 +3,10 @@ It's simple project with examples of patterns on PHP
 
 [Creational Patterns](examplesPatterns/CreationalPatterns)
 ====================================================================================================================
-*Порождающие шаблоны (Creational) — шаблоны проектирования, которые абстрагируют процесс инстанцирования. Они позволяют 
-сделать систему независимой от способа создания, композиции и представления объектов. Шаблон, порождающий классы, использует 
-наследование, чтобы изменять инстанцируемый класс, а шаблон, порождающий объекты, делегирует инстанцирование другому объекту.*
+*Generative patterns are design patterns that abstract the instantiation process. They allow making the system 
+independent of the method of creation, composition and presentation of objects. The template that creates 
+classes uses inheritance for modifying the instantiated class. The template that creates the objects delegates 
+the instantiation to another object.*
 
 | Name | Description |
 | -------- | ----------- |
