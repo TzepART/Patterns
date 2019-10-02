@@ -11,7 +11,7 @@ the instantiation to another object.*
 | Name | Description |
 | -------- | ----------- |
 | [Simple Factory](examplesPatterns/CreationalPatterns/simpleFactory.php) | A simple factory generates an instance only for the client and does it without providing any instance logic. |
-| [Factory Method](examplesPatterns/CreationalPatterns/factoryMethod.php) | Определяет интерфейс для создания объекта, но оставляет подклассам решение о том, какой класс инстанцировать. |
+| [Factory Method](examplesPatterns/CreationalPatterns/factoryMethod.php) | Using this pattern we define an interface for creating an object but leave to subclasses a decision about which class to instantiate. |
 | [Abstract Factory](examplesPatterns/CreationalPatterns/abstractFactory.php) | Класс, который представляет собой интерфейс для создания компонентов системы.|
 | [Builder](examplesPatterns/CreationalPatterns/builder.php) | Класс, который представляет собой интерфейс для создания сложного объекта. **Предназначен для поиска решения проблемы антипаттерна Telescoping constructor.** |
 | [Prototype](examplesPatterns/CreationalPatterns/prototype.php) | Определяет интерфейс создания объекта через клонирование другого объекта вместо создания через конструктор. |
