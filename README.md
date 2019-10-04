@@ -13,7 +13,7 @@ the instantiation to another object.*
 | [Simple Factory](examplesPatterns/CreationalPatterns/simpleFactory.php) | A simple factory generates an instance only for the client and does it without providing any instance logic. |
 | [Factory Method](examplesPatterns/CreationalPatterns/factoryMethod.php) | Using this pattern we define an interface for creating an object but leave to subclasses a decision about which class to instantiate. |
 | [Abstract Factory](examplesPatterns/CreationalPatterns/abstractFactory.php) | This pattern includes creating a class that represents an interface for creating system components.|
-| [Builder](examplesPatterns/CreationalPatterns/builder.php) | Класс, который представляет собой интерфейс для создания сложного объекта. **Предназначен для поиска решения проблемы антипаттерна Telescoping constructor.** |
+| [Builder](examplesPatterns/CreationalPatterns/builder.php) | A class that is an interface for creating a complex object. **This pattern is designed to find a solution to the problem of the antipattern Telescoping constructor.** |
 | [Prototype](examplesPatterns/CreationalPatterns/prototype.php) | Определяет интерфейс создания объекта через клонирование другого объекта вместо создания через конструктор. |
 | [Singleton](examplesPatterns/CreationalPatterns/singleton.php) | Шаблон позволяет удостовериться, что создаваемый объект — единственный в своём классе. |
 | Lazy initialization | Объект, инициализируемый во время первого обращения к нему. |
