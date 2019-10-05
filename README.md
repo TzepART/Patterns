@@ -21,8 +21,8 @@ the instantiation to another object.*
 
 [Structural Patterns](examplesPatterns/StructuralPatterns)
 =========================================================================================================
-*Структурные шаблоны (Structural) определяют различные сложные структуры, которые изменяют интерфейс уже существующих 
-объектов или его реализацию, позволяя облегчить разработку и оптимизировать программу.*
+*Structural patterns define various complex structures that change the interface of existing objects or their implementation, 
+that allows to facilitate the development and optimize the program.*
 
 | Name | Description |
 | ---- | ------------ |
