@@ -27,13 +27,13 @@ that allows to facilitate the development and optimize the program.*
 | Name | Description |
 | ---- | ------------ |
 | [Adapter](examplesPatterns/StructuralPatterns/adapter.php) | The "adapter" is an object that provides the interaction of two other objects, one of which uses, and the other provides an interface incompatible with the first. |
-| [Bridge](examplesPatterns/StructuralPatterns/bridge.php) | Структура, позволяющая изменять интерфейс обращения и интерфейс реализации класса независимо. |
-| [Composite](examplesPatterns/StructuralPatterns/composite.php) |	Объект, который объединяет в себе объекты, подобные ему самому. |
-| [Decorator](examplesPatterns/StructuralPatterns/decorator.php) | Класс, расширяющий функциональность другого класса без использования наследования. **Шаблон часто используется для соблюдения принципа  единственной обязанности (Single Responsibility Principle)** |
-| [Facade](examplesPatterns/StructuralPatterns/facade.php) | Объект, который абстрагирует работу с несколькими классами, объединяя их в единое целое. |
-| [Flyweight](examplesPatterns/StructuralPatterns/flyweight.php) | Это объект, представляющий себя как уникальный экземпляр в разных местах программы, но фактически не являющийся таковым. |
-| [Proxy](examplesPatterns/StructuralPatterns/proxy.php) | Объект, который является посредником между двумя другими объектами, и который реализует/ограничивает доступ к объекту, к которому обращаются через него |
-| Front controller | Обеспечивает унифицированный интерфейс для интерфейсов в подсистеме. Front Controller определяет высокоуровневый интерфейс, упрощающий использование подсистемы. |	
+| [Bridge](examplesPatterns/StructuralPatterns/bridge.php) | A structure that allows you to independently change the interface of calling and the interface of class implementation. |
+| [Composite](examplesPatterns/StructuralPatterns/composite.php) |	An object that combines objects like himself. |
+| [Decorator](examplesPatterns/StructuralPatterns/decorator.php) | The class that extends the functionality of another class without using inheritance. **The template is often used to comply with the Single Responsibility Principle** |
+| [Facade](examplesPatterns/StructuralPatterns/facade.php) | The object that hides work with several classes, combining them into a single whole. |
+| [Flyweight](examplesPatterns/StructuralPatterns/flyweight.php) | This is an object that represents itself as a unique instance in different places of the program but is not actually such. |
+| [Proxy](examplesPatterns/StructuralPatterns/proxy.php) | An object that mediates between two other objects and that implements/restricts access to the object that is accessed through it. |
+| Front controller | This pattern provides a unified interface for interfaces in the subsystem. Front Controller defines a high-level interface that simplifies the use of the subsystem. |	
 
 
 
