@@ -40,7 +40,6 @@ that allows to facilitate the development and optimize the program.*
 =========================================================================================================
 *Behavioral patterns define the interaction between objects, thus increasing their flexibility.*
 
-
 | Name | Description |
 | -------- | -------- |
 | [Chain Responsibility](examplesPatterns/BehavioralPatterns/chainResponsibility.php)	| This pattern designed for an organization in a system of levels of responsibility. |
