@@ -42,10 +42,10 @@ that allows to facilitate the development and optimize the program.*
 
 | Name | Description |
 | -------- | -------- |
-| [Chain Responsibility](examplesPatterns/BehavioralPatterns/chainResponsibility.php)	| Предназначен для организации в системе уровней ответственности. |
-| [Command](examplesPatterns/BehavioralPatterns/command.php)	| Представляет действие. Объект команды заключает в себе само действие и его параметры. |
-| [Iterator](examplesPatterns/BehavioralPatterns/iterator.php)	| Представляет собой объект, позволяющий получить последовательный доступ к элементам объекта-агрегата без использования описаний каждого из объектов, входящих в состав агрегации. |
-| [Mediator](examplesPatterns/BehavioralPatterns/mediator.php)	| Обеспечивает взаимодействие множества объектов, формируя при этом слабую связанность и избавляя объекты от необходимости явно ссылаться друг на друга. |
+| [Chain Responsibility](examplesPatterns/BehavioralPatterns/chainResponsibility.php)	| This pattern designed for an organization in a system of levels of responsibility. |
+| [Command](examplesPatterns/BehavioralPatterns/command.php)	| The pattern represents an action. The command object contains the action itself and its parameters. |
+| [Iterator](examplesPatterns/BehavioralPatterns/iterator.php)	| An iterator is an object that allows sequential access to the elements of an aggregate object without using descriptions of each of the objects that make up the aggregation. |
+| [Mediator](examplesPatterns/BehavioralPatterns/mediator.php)	| The pattern provides the interaction of many objects while forming a weak connection and eliminating the need for objects to explicitly refer to each other. |
 | [Memento](examplesPatterns/BehavioralPatterns/memento.php)	| Позволяет не нарушая инкапсуляцию зафиксировать и сохранить внутренние состояния объекта так, чтобы позднее восстановить его в этих состояниях. |
 | [Observer](examplesPatterns/BehavioralPatterns/observer.php)	| Определяет зависимость типа «один ко многим» между объектами таким образом, что при изменении состояния одного объекта все зависящие от него оповещаются об этом событии. |
 | [State](examplesPatterns/BehavioralPatterns/state.php)	| Используется в тех случаях, когда во время выполнения программы объект должен менять своё поведение в зависимости от своего состояния. |
@@ -53,3 +53,4 @@ that allows to facilitate the development and optimize the program.*
 | [Template method](examplesPatterns/BehavioralPatterns/templateMethod.php)	| Определяет основу алгоритма и позволяет наследникам переопределять некоторые шаги алгоритма, не изменяя его структуру в целом. |
 | [Visitor](examplesPatterns/BehavioralPatterns/visitor.php)	| Описывает операцию, которая выполняется над объектами других классов. При изменении класса Visitor нет необходимости изменять обслуживаемые классы. **Это один из способов соблюдения принципа открытости/закрытости (open/closed principle).** |
 | [Interpreter](examplesPatterns/BehavioralPatterns/interpreter.php) | Решает часто встречающуюся, но подверженную изменениям, задачу. |
+ 
