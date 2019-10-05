@@ -26,7 +26,7 @@ that allows to facilitate the development and optimize the program.*
 
 | Name | Description |
 | ---- | ------------ |
-| [Adapter](examplesPatterns/StructuralPatterns/adapter.php) | Объект, обеспечивающий взаимодействие двух других объектов, один из которых использует, а другой предоставляет несовместимый с первым интерфейс. |
+| [Adapter](examplesPatterns/StructuralPatterns/adapter.php) | The "adapter" is an object that provides the interaction of two other objects, one of which uses, and the other provides an interface incompatible with the first. |
 | [Bridge](examplesPatterns/StructuralPatterns/bridge.php) | Структура, позволяющая изменять интерфейс обращения и интерфейс реализации класса независимо. |
 | [Composite](examplesPatterns/StructuralPatterns/composite.php) |	Объект, который объединяет в себе объекты, подобные ему самому. |
 | [Decorator](examplesPatterns/StructuralPatterns/decorator.php) | Класс, расширяющий функциональность другого класса без использования наследования. **Шаблон часто используется для соблюдения принципа  единственной обязанности (Single Responsibility Principle)** |
