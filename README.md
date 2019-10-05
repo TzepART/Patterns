@@ -36,10 +36,9 @@ that allows to facilitate the development and optimize the program.*
 | Front controller | This pattern provides a unified interface for interfaces in the subsystem. Front Controller defines a high-level interface that simplifies the use of the subsystem. |	
 
 
-
 [Behavioral Patterns](examplesPatterns/BehavioralPatterns)
 =========================================================================================================
-*Поведенческие шаблоны (Behavioral) определяют взаимодействие между объектами, увеличивая таким образом его гибкость.*
+*Behavioral patterns define the interaction between objects, thus increasing their flexibility.*
 
 | Name | Description |
 | -------- | -------- |
