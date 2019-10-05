@@ -8,6 +8,7 @@ independent of the method of creation, composition and presentation of objects. 
 classes uses inheritance for modifying the instantiated class. The template that creates the objects delegates 
 the instantiation to another object.*
 
+
 | Name | Description |
 | -------- | ----------- |
 | [Simple Factory](examplesPatterns/CreationalPatterns/simpleFactory.php) | A simple factory generates an instance only for the client and does it without providing any instance logic. |
@@ -23,6 +24,7 @@ the instantiation to another object.*
 *Structural patterns define various complex structures that change the interface of existing objects or their implementation, 
 that allows to facilitate the development and optimize the program.*
 
+
 | Name | Description |
 | ---- | ------------ |
 | [Adapter](examplesPatterns/StructuralPatterns/adapter.php) | The "adapter" is an object that provides the interaction of two other objects, one of which uses, and the other provides an interface incompatible with the first. |
@@ -37,6 +39,7 @@ that allows to facilitate the development and optimize the program.*
 [Behavioral Patterns](examplesPatterns/BehavioralPatterns)
 =========================================================================================================
 *Behavioral patterns define the interaction between objects, thus increasing their flexibility.*
+
 
 | Name | Description |
 | -------- | -------- |
