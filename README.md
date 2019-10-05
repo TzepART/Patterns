@@ -18,7 +18,6 @@ the instantiation to another object.*
 | [Singleton](examplesPatterns/CreationalPatterns/singleton.php) | The pattern allows you to make sure that the created object is the only one class instance. |
 | Lazy initialization | The object will be initialized only when it will be called. |
 
-
 [Structural Patterns](examplesPatterns/StructuralPatterns)
 =========================================================================================================
 *Structural patterns define various complex structures that change the interface of existing objects or their implementation, 
@@ -34,7 +33,6 @@ that allows to facilitate the development and optimize the program.*
 | [Flyweight](examplesPatterns/StructuralPatterns/flyweight.php) | This is an object that represents itself as a unique instance in different places of the program but is not actually such. |
 | [Proxy](examplesPatterns/StructuralPatterns/proxy.php) | An object that mediates between two other objects and that implements/restricts access to the object that is accessed through it. |
 | Front controller | This pattern provides a unified interface for interfaces in the subsystem. Front Controller defines a high-level interface that simplifies the use of the subsystem. |	
-
 
 [Behavioral Patterns](examplesPatterns/BehavioralPatterns)
 =========================================================================================================
