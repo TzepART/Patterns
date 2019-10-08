@@ -47,7 +47,7 @@ that allows to facilitate the development and optimize the program.*
 | [Command](examplesPatterns/BehavioralPatterns/command.php)	| The pattern represents an action. The command object contains the action itself and its parameters. |
 | [Iterator](examplesPatterns/BehavioralPatterns/iterator.php)	| An iterator is an object that allows sequential access to the elements of an aggregate object without using descriptions of each of the objects that make up the aggregation. |
 | [Mediator](examplesPatterns/BehavioralPatterns/mediator.php)	| The pattern provides the interaction of many objects while forming a weak connection and eliminating the need for objects to explicitly refer to each other. |
-| [Memento](examplesPatterns/BehavioralPatterns/memento.php)	| Позволяет не нарушая инкапсуляцию зафиксировать и сохранить внутренние состояния объекта так, чтобы позднее восстановить его в этих состояниях. |
+| [Memento](examplesPatterns/BehavioralPatterns/memento.php)	| This pattern allows to fix and to save the internal state of the object so that it can be restored later to these states without breaking encapsulation. |
 | [Observer](examplesPatterns/BehavioralPatterns/observer.php)	| Определяет зависимость типа «один ко многим» между объектами таким образом, что при изменении состояния одного объекта все зависящие от него оповещаются об этом событии. |
 | [State](examplesPatterns/BehavioralPatterns/state.php)	| Используется в тех случаях, когда во время выполнения программы объект должен менять своё поведение в зависимости от своего состояния. |
 | [Strategy](examplesPatterns/BehavioralPatterns/strategy.php)	| Предназначен для определения семейства алгоритмов, инкапсуляции каждого из них и обеспечения их взаимозаменяемости. |
