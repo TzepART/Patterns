@@ -50,7 +50,7 @@ that allows to facilitate the development and optimize the program.*
 | [Memento](examplesPatterns/BehavioralPatterns/memento.php)	| This pattern allows to fix and to save the internal state of the object so that it can be restored later to these states without breaking encapsulation. |
 | [Observer](examplesPatterns/BehavioralPatterns/observer.php)	| The task of this pattern is defining a one-to-many relationship between objects. When a state of one object changes, all dependent on it are notified about this event. |
 | [State](examplesPatterns/BehavioralPatterns/state.php)	| It is used when, during the execution of a program, an object must change its behavior depending on its state. |
-| [Strategy](examplesPatterns/BehavioralPatterns/strategy.php)	| Предназначен для определения семейства алгоритмов, инкапсуляции каждого из них и обеспечения их взаимозаменяемости. |
+| [Strategy](examplesPatterns/BehavioralPatterns/strategy.php)	| This pattern designed to determine the family of algorithms, encapsulate each of them and ensure their interchangeability. |
 | [Template method](examplesPatterns/BehavioralPatterns/templateMethod.php)	| Определяет основу алгоритма и позволяет наследникам переопределять некоторые шаги алгоритма, не изменяя его структуру в целом. |
 | [Visitor](examplesPatterns/BehavioralPatterns/visitor.php)	| Описывает операцию, которая выполняется над объектами других классов. При изменении класса Visitor нет необходимости изменять обслуживаемые классы. **Это один из способов соблюдения принципа открытости/закрытости (open/closed principle).** |
 | [Interpreter](examplesPatterns/BehavioralPatterns/interpreter.php) | Решает часто встречающуюся, но подверженную изменениям, задачу. |
