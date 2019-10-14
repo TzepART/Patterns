@@ -51,7 +51,7 @@ that allows to facilitate the development and optimize the program.*
 | [Observer](examplesPatterns/BehavioralPatterns/observer.php)	| The task of this pattern is defining a one-to-many relationship between objects. When a state of one object changes, all dependent on it are notified about this event. |
 | [State](examplesPatterns/BehavioralPatterns/state.php)	| It is used when, during the execution of a program, an object must change its behavior depending on its state. |
 | [Strategy](examplesPatterns/BehavioralPatterns/strategy.php)	| This pattern designed to determine the family of algorithms, encapsulate each of them and ensure their interchangeability. |
-| [Template method](examplesPatterns/BehavioralPatterns/templateMethod.php)	| Определяет основу алгоритма и позволяет наследникам переопределять некоторые шаги алгоритма, не изменяя его структуру в целом. |
-| [Visitor](examplesPatterns/BehavioralPatterns/visitor.php)	| Описывает операцию, которая выполняется над объектами других классов. При изменении класса Visitor нет необходимости изменять обслуживаемые классы. **Это один из способов соблюдения принципа открытости/закрытости (open/closed principle).** |
-| [Interpreter](examplesPatterns/BehavioralPatterns/interpreter.php) | Решает часто встречающуюся, но подверженную изменениям, задачу. |
+| [Template method](examplesPatterns/BehavioralPatterns/templateMethod.php)	| The pattern defines the basis of the algorithm in the parent class and allows child classes to redefine some steps of the algorithm without changing its structure as a whole. |
+| [Visitor](examplesPatterns/BehavioralPatterns/visitor.php)	| It describes the operation that is performed on objects of other classes. When changing the Visitor class, there is no need to change the classes served. **This is one way to adhere to the open/closed principle.** |
+| [Interpreter](examplesPatterns/BehavioralPatterns/interpreter.php) | It solves a frequently encountered, but subject to change, task. |
  
