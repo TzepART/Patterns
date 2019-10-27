@@ -1,9 +1,3 @@
 Behavioral patterns
 ========================
-Most of these design patterns are specifically concerned with communication between objects.
-
-*Поведенческие шаблоны (англ. behavioral patterns) — шаблоны проектирования, определяющие алгоритмы и способы 
-реализации взаимодействия различных объектов и классов. 
-Они связаны с присвоением обязанностей (responsibilities) объектам. От структурных шаблонов они отличаются тем, 
-что не просто описывают структуру, но и очерчивают шаблоны передачи данных, обеспечения взаимодействия. То есть 
-поведенческие шаблоны позволяют ответить на вопрос «Как реализовать поведение в программном компоненте?»*
+*Behavioral patterns - design patterns that define algorithms and ways to implement the interaction of various objects and classes. They are associated with the assignment of responsibilities to objects. They differ from structural patterns in that they not only describe the structure but also outline patterns of data transfer and interaction. That is, behavioral patterns allow you to answer the question "How to implement behavior in a software component?"*
