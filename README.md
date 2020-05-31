@@ -4,19 +4,19 @@ It's simple project with examples of patterns on PHP
 ## Try running of code
 If you have PHP version >=7.1, than make in terminal next commands
 
-```
+``` shell script
 git clone https://github.com/TzepART/examples-of-patterns.git
 cd examples-of-patterns
 composer install
 ```
 
 For running one of example:
-```
+``` shell script
 ./public/runner.php {type_of_pattern} {name_of_pattern}
 ```
 
 Example running:
-```
+``` shell script
 ./public/runner.php BehavioralPatterns Command
 ```
 
