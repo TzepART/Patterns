@@ -1,6 +1,21 @@
 # Patterns
 It's simple project with examples of patterns on PHP
 
+## Try running of code
+If you have PHP version >7.1, than make in terminal next commands
+
+    git clone https://github.com/TzepART/examples-of-patterns.git
+    cd examples-of-patterns
+    composer install
+
+For running one of example:
+
+    ./public/runner.php {type_of_pattern} {name_of_pattern}
+    
+Example running:
+
+    ./public/runner.php BehavioralPatterns Command
+
 [Creational Patterns](src/CreationalPatterns)
 ====================================================================================================================
 *Creational patterns are design patterns that abstract the instantiation process. They allow making the system 
