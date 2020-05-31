@@ -1,7 +1,10 @@
 {
   "autoload": {
     "psr-4": {
-      "Patterns\\" : "examplesPatterns/"
+      "Patterns\\": "src/"
     }
+  },
+  "require": {
+    "php": ">=7.1"
   }
 }
