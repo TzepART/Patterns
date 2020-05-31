@@ -44,7 +44,7 @@ that allows to facilitate the development and optimize the program.*
 | Name | Description |
 | -------- | -------- |
 | [Chain Responsibility](src/BehavioralPatterns/ChainResponsibility/Runner.php)	| This pattern designed for an organization in a system of levels of responsibility. |
-| [Command](src/BehavioralPatterns/command/command.php)	| The pattern represents an action. The command object contains the action itself and its parameters. |
+| [Command](src/BehavioralPatterns/command/Command.php)	| The pattern represents an action. The command object contains the action itself and its parameters. |
 | [Iterator](src/BehavioralPatterns/iterator/iterator.php)	| An iterator is an object that allows sequential access to the elements of an aggregate object without using descriptions of each of the objects that make up the aggregation. |
 | [Mediator](src/BehavioralPatterns/mediator/mediator.php)	| The pattern provides the interaction of many objects while forming a weak connection and eliminating the need for objects to explicitly refer to each other. |
 | [Memento](src/BehavioralPatterns/memento/memento.php)	| This pattern allows to fix and to save the internal state of the object so that it can be restored later to these states without breaking encapsulation. |

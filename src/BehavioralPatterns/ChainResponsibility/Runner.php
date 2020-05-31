@@ -3,7 +3,9 @@ declare(strict_types=1);
 
 namespace Patterns\BehavioralPatterns\ChainResponsibility;
 
-class Runner
+use Patterns\RunnerInterface;
+
+class Runner implements RunnerInterface
 {
     public static function using(): void
     {
