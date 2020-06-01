@@ -1,10 +1,13 @@
 ## Description
 
-Вкратце
-Шаблон позволяет создавать разные свойства объекта, избегая загрязнения конструктора (constructor pollution).
-Это полезно, когда у объекта может быть несколько свойств. Или когда создание объекта состоит из большого количества этапов.
-Шаблон «Строитель» предназначен для поиска решения проблемы антипаттерна Telescoping constructor.
+Summarily
+The template allows you to create different properties of an object, avoiding contamination of the constructor (constructor pollution).
+This is useful when an object can have multiple properties. Or when creating an object consists of a large number of stages.
+The Builder template is designed to find a solution to the Telescoping constructor antipattern problem.
 
-Когда использовать?
-Когда у объекта может быть несколько свойств и когда нужно избежать Telescoping constructor.
-Ключевое отличие от шаблона «Простая фабрика»: он используется в одноэтапном создании, а «Строитель» — в многоэтапном.
+When to use it?
+When an object can have multiple properties and when to avoid Telescoping constructor.
+The key difference from the "Simple factory" template is that it is used in one — step creation, while "Builder" is used in multi-step creation.
+
+
+[русская версия](README-rus.md)

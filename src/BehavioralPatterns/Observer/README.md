@@ -1,8 +1,11 @@
 ## Description
 
-Вкратце
-Шаблон определяет зависимость между объектами, чтобы при изменении состояния одного из них
-его «подчинённые» узнавали об этом.
-Или
-В шаблоне «Наблюдатель» есть объект («субъект»), ведущий список своих «подчинённых» («наблюдателей») и
-автоматически уведомляющий их о любом изменении своего состояния, обычно с помощью вызова одного из их методов.
+Summarily
+The template defines a dependency between objects so that when the state of one of them changes
+his "subordinates" found out about it.
+Or
+In the "Observer" template, there is an object ("subject") that maintains a list of its "subordinates" ("observers") and
+automatically notifies them of any change in their state, usually by calling one of their methods.
+
+
+[русская версия](README-rus.md)

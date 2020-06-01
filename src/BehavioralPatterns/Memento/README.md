@@ -1,7 +1,10 @@
 ## Description
 
-Вкратце
-Шаблон «Хранитель» фиксирует и хранит текущее состояние объекта, чтобы оно легко восстанавливалось.
-Или
-Шаблон «Хранитель» позволяет восстанавливать объект в его предыдущем состоянии (отмена через откат — undo via rollback).
-Обычно шаблон применяется, когда нужно реализовать функциональность отмены операции.
+Summarily
+The "Keeper" template captures and stores the current state of an object so that it can be easily restored.
+Or
+The "Keeper" template allows you to restore an object to its previous state (undo via rollback).
+The template is usually used when you need to implement the operation cancellation functionality.
+
+
+[русская версия](README-rus.md)

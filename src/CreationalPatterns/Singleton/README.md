@@ -1,11 +1,14 @@
 ## Description
 
-Вкратце
-Шаблон позволяет удостовериться, что создаваемый объект — единственный в своём классе.
-Шаблон «Одиночка» позволяет ограничивать создание класса единственным объектом. Это удобно, когда для
-координации действий в рамках системы требуется, чтобы объект был единственным в своём классе.
+Summarily
+The template allows you to make sure that the object you are creating is unique in its class.
+The "Single" template allows you to restrict class creation to a single object. This is convenient when for
+coordination of actions within the system requires that the object is unique in its class.
 
-недостатки шаблона:
-- вносит в приложение глобальное состояние, так что изменение в одном месте может повлиять на все остальные случаи использования
-- он делает ваш код сильно связанным (tightly coupled),
-- создание прототипа (mocking) «Одиночки» может быть затруднено.
+disadvantages of the template:
+- adds a global state to the app, so that a change in one place can affect all other usage cases
+- it makes your code strongly coupled,
+- creating a prototype (mocking) "Single" can be difficult.
+
+
+[русская версия](README-rus.md)

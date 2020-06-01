@@ -1,10 +1,13 @@
 ## Description
 
-Вкратце
-Шаблон «Декоратор» позволяет во время выполнения динамически изменять поведение объекта,
-обёртывая его в объект класса «декоратора».
-Или
-Шаблон «Декоратор» позволяет подключать к объекту дополнительное поведение (статически или динамически),
-не влияя на поведение других объектов того же класса. Шаблон часто используется для соблюдения принципа
-единственной обязанности (Single Responsibility Principle), поскольку позволяет разделить функциональность
-между классами для решения конкретных задач.
+Summarily
+The Decorator template allows you to dynamically change the behavior of an object at runtime,
+wrapping it in an object of the "decorator" class.
+Or
+The "Decorator" template allows you to connect additional behavior to an object (statically or dynamically),
+without affecting the behavior of other objects of the same class. The template is often used to observe the principle
+single Responsibility Principle, because it allows you to share functionality
+between classes for specific tasks.
+
+
+[русская версия](README-rus.md)

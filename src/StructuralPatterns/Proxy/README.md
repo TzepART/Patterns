@@ -1,11 +1,14 @@
 ## Description
 
-Вкратце
-С помощью шаблона «Заместитель» класс представляет функциональность другого класса.
-Или
-В наиболее общей форме «Заместитель» — это класс, функционирующий как интерфейс к чему-либо.
-Это оболочка или объект-агент, вызываемый клиентом для получения доступа к другому, «настоящему» объекту.
-«Заместитель» может просто переадресовывать запросы настоящему объекту, а может предоставлять
-дополнительную логику: кеширование данных при интенсивном выполнении операций или потреблении
-ресурсов настоящим объектом; проверка предварительных условий (preconditions) до вызова выполнения
-операций настоящим объектом.
+Summarily
+Using the "Substitute" template, a class represents the functionality of another class.
+Or
+In its most General form, a "substitute" is a class that functions as an interface to something.
+This is a shell or agent object called by the client to access another "real" object.
+The "substitute" can simply forward requests to the real object, or it can provide
+additional logic: data caching for intensive operations or consumption
+this object; checking preconditions before calling execution
+operations with a real object.
+
+
+[русская версия](README-rus.md)

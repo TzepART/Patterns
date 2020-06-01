@@ -1,8 +1,12 @@
 ## Description
-Вкратце
-Шаблон «Цепочка ответственности» позволяет создавать цепочки объектов. Запрос входит с одного конца цепочки и
-движется от объекта к объекту, пока не будет найден подходящий обработчик.
-Или
-Шаблон «Цепочка ответственности» содержит исходный управляющий объект и ряд обрабатывающих объектов.
-Каждый обрабатывающий объект содержит логику, определяющую типы командных объектов, которые он может
-обрабатывать, а остальные передаются по цепочке следующему обрабатывающему объекту.
+
+Summarily
+The chain of responsibility template allows you to create chains of objects. The request is entered from one end of the chain and
+moves from object to object until a suitable handler is found.
+Or
+The chain of responsibility template contains the source control object and a number of processing objects.
+Each processing object contains logic that defines the types of command objects that it can
+process, and the rest are passed along the chain to the next processing object.
+
+
+[русская версия](README-rus.md)

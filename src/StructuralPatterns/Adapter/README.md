@@ -1,6 +1,9 @@
 ## Description
 
-Вкратце
-Шаблон «Адаптер» позволяет помещать несовместимый объект в обёртку, чтобы он оказался совместимым с другим классом.
-Или шаблон проектирования «Адаптер» позволяет использовать интерфейс существующего класса как другой интерфейс. Этот
-шаблон часто применяется для обеспечения работы одних классов с другими без изменения их исходного кода.
+Summarily
+The Adapter template allows you to put an incompatible object in a wrapper so that it is compatible with another class.
+Or the "Adapter" design pattern allows you to use the interface of an existing class as a different interface. This one
+a template is often used to ensure that some classes work with others without changing their source code.
+
+
+[русская версия](README-rus.md)

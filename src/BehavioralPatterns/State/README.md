@@ -1,11 +1,14 @@
 ## Description
 
-Вкратце
-Шаблон позволяет менять поведение класса при изменении состояния.
-Или
-Шаблон «Состояние» реализует машину состояний объектно ориентированным способом. Это достигается с помощью:
- - реализации каждого состояния в виде производного класса интерфейса шаблона «Состояние»,
- - реализации переходов состояний (state transitions) посредством вызова методов, определённых вышестоящим классом (superclass).
+Summarily
+The template allows you to change the behavior of the class when the state changes.
+Or
+The State template implements the state machine in an object-oriented way. This is achieved by:
+ - implementations of each state as a derived class of the "State" template interface,
+ - implement state transitions by calling methods defined by a higher class (superclass).
 
-Шаблон «Состояние» — это в некотором плане шаблон «Стратегия», при котором возможно переключение текущей стратегии
-с помощью вызова методов, определённых в интерфейсе шаблона.
+The "State" template is in some sense a "Strategy" template, where you can switch the current strategy
+by calling methods defined in the template interface.
+
+
+[русская версия](README-rus.md)

@@ -1,11 +1,14 @@
 ## Description
 
-Вкратце
-Объект создаётся посредством клонирования существующего объекта.
-Или другими словами Шаблон «Прототип» используется, когда типы создаваемых объектов определяются экземпляром-прототипом,
-клонированным для создания новых объектов.
+Summarily
+An object is created by cloning an existing object.
+Or in other words, the "Prototype" Template is used when the types of objects being created are defined by the prototype instance,
+cloned to create new objects.
 
-Когда использовать?
-Когда необходимый объект аналогичен уже существующему или когда создание с нуля дороже клонирования.
+When to use it?
+When the required object is similar to an existing one, or when creating it from scratch is more expensive than cloning.
 
-В PHP можно использовать __clone
+In PHP, you can use _ _ clone
+
+
+[русская версия](README-rus.md)

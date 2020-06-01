@@ -1,11 +1,14 @@
 ## Description
 
-Вкратце
-Шаблон «Компоновщик» позволяет клиентам обрабатывать отдельные объекты в едином порядке.
-Компоновщик (англ. Composite pattern) — структурный шаблон проектирования, объединяющий объекты в древовидную
-структуру для представления иерархии от частного к целому. Компоновщик позволяет клиентам обращаться
-к отдельным объектам и к группам объектов одинаково.
+Summarily
+The "template Builder" allows clients to treat individual objects in a uniform way.
+Composite pattern is a structural design pattern that combines objects into a tree-like structure
+a structure for representing the hierarchy from particular to whole. The linker allows clients to access
+the same applies to individual objects and groups of objects.
 
-Цель
-Паттерн определяет иерархию классов, которые одновременно могут состоять из примитивных и
-сложных объектов, упрощает архитектуру клиента, делает процесс добавления новых видов объекта более простым.
+Goal
+The pattern defines a hierarchy of classes that can simultaneously consist of primitive and
+it simplifies the client's architecture and makes the process of adding new types of objects easier.
+
+
+[русская версия](README-rus.md)

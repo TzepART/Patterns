@@ -1,8 +1,11 @@
 ## Description
 
-Вкратце
-Шаблон «Посредник» подразумевает добавление стороннего объекта («посредника») для управления
-взаимодействием между двумя объектами («коллегами»). Шаблон помогает уменьшить связанность (coupling) классов,
-общающихся друг с другом, ведь теперь они не должны знать о реализациях своих собеседников.
-Или
-Шаблон определяет объект, который инкапсулирует способ взаимодействия набора объектов.
+Summarily
+The "Intermediary" template implies adding a third-party object ("intermediary") for management
+interaction between two objects ("colleagues"). The template helps reduce the coupling of classes,
+communicating with each other, because now they do not need to know about the implementations of their interlocutors.
+Or
+A template defines an object that encapsulates the way a set of objects interact.
+
+
+[русская версия](README-rus.md)
