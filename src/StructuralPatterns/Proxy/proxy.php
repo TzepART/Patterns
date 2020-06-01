@@ -90,9 +90,7 @@ class Security
         return $password === '$ecr@t';
     }
 
-    /**
-     *
-     */
+
     public function close()
     {
         $this->door->close();

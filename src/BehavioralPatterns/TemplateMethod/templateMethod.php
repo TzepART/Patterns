@@ -29,9 +29,7 @@ namespace Patterns\BehavioralPatterns\TemplateMethod;
 abstract class Builder
 {
     // Template Method
-    /**
-     *
-     */
+
     final public function build()
     {
         $this->test();

@@ -126,9 +126,7 @@ class TeaShop
         $this->orders[$table] = $this->teaMaker->make($teaType);
     }
 
-    /**
-     *
-     */
+
     public function serve()
     {
         /** @var Tea $tea */

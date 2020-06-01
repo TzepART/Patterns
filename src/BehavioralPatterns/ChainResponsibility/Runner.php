@@ -7,8 +7,10 @@ use Patterns\RunnerInterface;
 
 class Runner implements RunnerInterface
 {
-    /**Create the main bank account containing the logic of linking invoices to
-     * the chains, and the accounts themselves.*/
+    /**
+     * Create the main bank account containing the logic of linking invoices to
+     * the chains, and the accounts themselves.
+     */
     public static function using(): void
     {
         /**

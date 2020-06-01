@@ -67,9 +67,7 @@ interface AnimalOperation
  */
 class Monkey implements Animal
 {
-    /**
-     *
-     */
+
     public function shout()
     {
         echo 'Ooh oo aa aa!'.PHP_EOL;
@@ -91,9 +89,7 @@ class Monkey implements Animal
  */
 class Lion implements Animal
 {
-    /**
-     *
-     */
+
     public function roar()
     {
         echo 'Roaaar!'.PHP_EOL;
@@ -115,9 +111,7 @@ class Lion implements Animal
  */
 class Dolphin implements Animal
 {
-    /**
-     *
-     */
+
     public function speak()
     {
         echo 'Tuut tuttu tuutt!'.PHP_EOL;

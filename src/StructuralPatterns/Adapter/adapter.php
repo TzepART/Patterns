@@ -79,12 +79,10 @@ class Hunter
  * @package Patterns\StructuralPatterns\Adapter
  */
 class Rabbit{
-    /**
-     *
-     */
+
     public function squeak()
     {
-        
+
     }
 }
 
