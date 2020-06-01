@@ -9,6 +9,13 @@ class Runner implements RunnerInterface
 {
     public static function using(): void
     {
-        // TODO: Implement using() method.
+        /**
+         * Now hunter can hunt bear and rabbit
+         */
+        $rabbit = new Rabbit();
+        $rabbitAdapter = new RabbitAdapter($rabbit);
+
+        $hunter = new Hunter();
+        $hunter->hunt($rabbitAdapter);
     }
 }

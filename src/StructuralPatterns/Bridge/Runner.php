@@ -9,6 +9,16 @@ class Runner implements RunnerInterface
 {
     public static function using(): void
     {
-        // TODO: Implement using() method.
+        /**
+         * Example with different web-page's templates
+         */
+        $darkTheme = new DarkTheme();
+        $lightTheme = new LightTheme();
+
+        $about = new About($darkTheme);
+        $careers = new Careers($lightTheme);
+
+        echo $about->getContent(); // "About page in Dark Black";
+        echo $careers->getContent(); // "Careers page in Light Black";
     }
 }

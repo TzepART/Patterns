@@ -9,6 +9,10 @@ class Runner implements RunnerInterface
 {
     public static function using(): void
     {
-        // TODO: Implement using() method.
+        $door = new Security(new SecretDoor());
+        $door->open('invalid'); // Big no! It ain't possible.
+
+        $door->open('$ecr@t'); // Opening secret door
+        $door->close(); // Closing secret door
     }
 }

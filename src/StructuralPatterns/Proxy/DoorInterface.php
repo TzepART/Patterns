@@ -4,10 +4,12 @@ declare(strict_types=1);
 namespace Patterns\StructuralPatterns\Proxy;
 
 /**
+ * Create interface Door and SecretDoor that implements interface
+ *
  * Interface Door
  * @package Patterns\StructuralPatterns\Proxy
  */
-interface Door
+interface DoorInterface
 {
     /**
      * @return mixed
