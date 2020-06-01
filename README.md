@@ -20,8 +20,7 @@ Example running:
 ./public/runner.php BehavioralPatterns Command
 ```
 
-[Creational Patterns](src/CreationalPatterns)
-====================================================================================================================
+## [Creational Patterns](src/CreationalPatterns)
 *Creational patterns are design patterns that abstract the instantiation process. They allow making the system 
 independent of the method of creation, composition and presentation of objects. The template that creates 
 classes uses inheritance for modifying the instantiated class. The template that creates the objects delegates 
@@ -38,8 +37,7 @@ the instantiation to another object.*
 | [Singleton](src/CreationalPatterns/Singleton) | The pattern allows you to make sure that the created object is the only one class instance. |
 | Lazy initialization | The object will be initialized only when it will be called. |
 
-[Structural Patterns](src/StructuralPatterns)
-=========================================================================================================
+## [Structural Patterns](src/StructuralPatterns)
 *Structural patterns define various complex structures that change the interface of existing objects or their implementation, 
 that allows to facilitate the development and optimize the program.*
 
@@ -55,8 +53,7 @@ that allows to facilitate the development and optimize the program.*
 | [Proxy](src/StructuralPatterns/Proxy) | An object that mediates between two other objects and that implements/restricts access to the object that is accessed through it. |
 | Front controller | This pattern provides a unified interface for interfaces in the subsystem. Front Controller defines a high-level interface that simplifies the use of the subsystem. |	
 
-[Behavioral Patterns](src/BehavioralPatterns)
-=========================================================================================================
+## [Behavioral Patterns](src/BehavioralPatterns)
 *Behavioral patterns define the interaction between objects, thus increasing their flexibility.*
 
 
