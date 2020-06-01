@@ -3,8 +3,6 @@ declare(strict_types=1);
 
 namespace Patterns\BehavioralPatterns\Interpreter;
 
-//Step 4.
-
 /**
  * Class EqualsExpression
  * @package Patterns\BehavioralPatterns\Interpreter

@@ -3,16 +3,14 @@ declare(strict_types=1);
 
 namespace Patterns\BehavioralPatterns\TemplateMethod;
 
-//Step 1. The first. Our the base class defines the framework of the build algorithm
-
 /**
+ * The first. Our the base class defines the framework of the build algorithm
+ *
  * Class Builder
  * @package Patterns\BehavioralPatterns\TemplateMethod
  */
 abstract class AbstractBuilder
 {
-    // Template Method
-
     final public function build()
     {
         $this->test();

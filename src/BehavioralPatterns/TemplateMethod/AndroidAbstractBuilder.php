@@ -3,9 +3,9 @@ declare(strict_types=1);
 
 namespace Patterns\BehavioralPatterns\TemplateMethod;
 
-//Step 2. Now create the implementation
-
 /**
+ * Now create the implementation
+ *
  * Class AndroidBuilder
  * @package Patterns\BehavioralPatterns\TemplateMethod
  */

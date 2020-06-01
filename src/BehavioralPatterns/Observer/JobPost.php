@@ -3,9 +3,9 @@ declare(strict_types=1);
 
 namespace Patterns\BehavioralPatterns\Observer;
 
-//Step 1. Create people looking for work, who need to be notified of the appearance of vacancies.
-
 /**
+ * Create people looking for work, who need to be notified of the appearance of vacancies.
+ *
  * Class JobPost
  * @package Patterns\BehavioralPatterns\Observer
  */

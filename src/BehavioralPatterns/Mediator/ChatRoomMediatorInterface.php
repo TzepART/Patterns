@@ -3,9 +3,10 @@ declare(strict_types=1);
 
 namespace Patterns\BehavioralPatterns\Mediator;
 
-//Step 1. Create an "Mediator":
 
 /**
+ * Create an "Mediator"
+ *
  * Interface ChatRoomMediator
  * @package Patterns\BehavioralPatterns\Mediator
  */

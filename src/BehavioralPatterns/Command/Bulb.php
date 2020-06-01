@@ -3,9 +3,9 @@ declare(strict_types=1);
 
 namespace Patterns\BehavioralPatterns\Command;
 
-// Receiver
-
 /**
+ * Receiver
+ *
  * Class Bulb
  * @package Patterns\BehavioralPatterns\Command
  */

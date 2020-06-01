@@ -9,7 +9,6 @@ class Runner implements RunnerInterface
 {
     public static function using(): void
     {
-        //Using
         $bulb = new Bulb();
 
         $turnOn = new TurnOn($bulb);

@@ -3,8 +3,6 @@ declare(strict_types=1);
 
 namespace Patterns\BehavioralPatterns\Interpreter;
 
-//Step 2.
-
 /**
  * Class LiteralExpression
  * @package Patterns\BehavioralPatterns\Interpreter

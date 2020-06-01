@@ -19,7 +19,6 @@ class QuickSortStrategy implements SortStrategyInterface
 
         $dataSet = $this->quickSort($dataSet);
 
-        // Do sorting
         return $dataSet;
     }
 

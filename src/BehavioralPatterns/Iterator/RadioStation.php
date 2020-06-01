@@ -3,8 +3,6 @@ declare(strict_types=1);
 
 namespace Patterns\BehavioralPatterns\Iterator;
 
-//Step 1. Add RadioStation
-
 /**
  * Class RadioStation
  * @package Patterns\BehavioralPatterns\Iterator

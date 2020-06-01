@@ -3,9 +3,9 @@ declare(strict_types=1);
 
 namespace Patterns\BehavioralPatterns\Observer;
 
-//Step 2. Create publications of vacancies, on which people will subscribe.
-
 /**
+ * Create publications of vacancies, on which people will subscribe.
+ *
  * Interface Observable
  * @package Patterns\BehavioralPatterns\Observer
  */

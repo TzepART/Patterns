@@ -6,8 +6,6 @@ namespace Patterns\BehavioralPatterns\Iterator;
 use Countable;
 use Iterator;
 
-//Step 2. Add Iterator
-
 /**
  * Class StationList
  * @package Patterns\BehavioralPatterns\Iterator

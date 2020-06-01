@@ -9,7 +9,6 @@ class Runner implements RunnerInterface
 {
     public static function using(): void
     {
-        //Using
         $stationList = new StationList();
 
         $stationList->addStation(new RadioStation(89));

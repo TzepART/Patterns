@@ -3,9 +3,9 @@ declare(strict_types=1);
 
 namespace Patterns\BehavioralPatterns\Memento;
 
-//Step 1. Create Class "Memento" where we can save state of editor.
-
 /**
+ * Create Class "Memento" where we can save state of editor.
+ *
  * Class EditorMemento
  * @package Patterns\BehavioralPatterns\Memento
  */

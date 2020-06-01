@@ -3,9 +3,9 @@ declare(strict_types=1);
 
 namespace Patterns\BehavioralPatterns\Mediator;
 
-//Step 2. Create an "Colleague":
-
 /**
+ * Create an "Colleague"
+ *
  * Class User
  * @package Patterns\BehavioralPatterns\Mediator
  */

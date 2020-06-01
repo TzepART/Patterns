@@ -3,8 +3,6 @@ declare(strict_types=1);
 
 namespace Patterns\BehavioralPatterns\Interpreter;
 
-//Step 5.
-
 /**
  * Class InterpreterContext
  * @package Patterns\BehavioralPatterns\Interpreter

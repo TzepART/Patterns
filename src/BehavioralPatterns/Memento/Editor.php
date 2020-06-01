@@ -3,9 +3,9 @@ declare(strict_types=1);
 
 namespace Patterns\BehavioralPatterns\Memento;
 
-//Step 2. Create class Editor, that will be use EditorMemento
-
 /**
+ * Create class Editor, that will be use EditorMemento
+ *
  * Class Editor
  * @package Patterns\BehavioralPatterns\Memento
  */

@@ -3,8 +3,6 @@ declare(strict_types=1);
 
 namespace Patterns\BehavioralPatterns\State;
 
-//Step 2. Make text editor
-
 /**
  * Class TextEditor
  * @package Patterns\BehavioralPatterns\State
