@@ -9,6 +9,12 @@ class Runner implements RunnerInterface
 {
     public static function using(): void
     {
-        // TODO: Implement using() method.
+        /** @var Hammer $hammer */
+        $hammer = Tool::initial(Hammer::class);
+        /** @var Saw $saw */
+        $saw = Tool::initial(Saw::class);
+
+        $hammer->makeAction();
+        $saw->makeAction();
     }
 }

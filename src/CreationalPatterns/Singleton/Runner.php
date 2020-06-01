@@ -9,6 +9,9 @@ class Runner implements RunnerInterface
 {
     public static function using(): void
     {
-        // TODO: Implement using() method.
+        $president1 = MainBoss::getInstance();
+        $president2 = MainBoss::getInstance();
+
+        var_dump($president1 === $president2); // true
     }
 }

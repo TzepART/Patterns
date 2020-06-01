@@ -9,6 +9,18 @@ class Runner implements RunnerInterface
 {
     public static function using(): void
     {
-        // TODO: Implement using() method.
+        /**
+         * Using DoorFactory
+         */
+        $door = DoorFactory::makeDoor(100, 200);
+        echo 'Width: ' . $door->getWidth() . PHP_EOL;
+        echo 'Height: ' . $door->getHeight() . PHP_EOL;
+
+        /**
+         * Using HouseFactory
+         */
+        $door = HouseFactory::makeHouse(4, 6);
+        echo 'Count doors: ' . $door->getCountDoors() . PHP_EOL;
+        echo 'Count windows: ' . $door->getCountWindows() . PHP_EOL;
     }
 }
