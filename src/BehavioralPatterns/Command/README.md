@@ -1,9 +1,12 @@
 ## Description
 
 Summarily
+
 The Command template allows you to encapsulate actions in objects. The key idea is to provide funds
 separating the client from the recipient.
+
 Or
+
 In the Command template, the object is used to encapsulate all the information required for execution
 actions or to initiate it later. The information includes the method name; the object that owns
 method; values of method parameters.
