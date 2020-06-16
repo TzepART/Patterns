@@ -16,8 +16,8 @@ the method name, the object that owns the method, and the method parameter value
 Four terms are always associated with the Command template:
 - commands (command),
 - command receiver,
-- command caller (invoker)
- client (client).
+- command caller (invoker) client (client).
+
 The Command object knows about the receiver and calls the receiver method. Parameter values of the receiver
 saved in the team. The invoker knows how to execute the command and may be doing accounting and
 recording completed commands. The invoker doesn't know anything about the specific command, it only knows
