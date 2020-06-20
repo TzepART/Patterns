@@ -1,8 +1,11 @@
 ## Description
 
 Summarily
+
 The template allows you to change the behavior of the class when the state changes.
+
 Or
+
 The State template implements the state machine in an object-oriented way. This is achieved by:
  - implementations of each state as a derived class of the "State" template interface,
  - implement state transitions by calling methods defined by a higher class (superclass).
