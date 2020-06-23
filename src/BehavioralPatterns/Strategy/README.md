@@ -1,11 +1,9 @@
 ## Description
 
-Summarily
-
+#### Summarily
 The Strategy template allows you to switch between algorithms or strategies depending on the situation.
 
-Or
-
+#### Or
 The Strategy template allows you to select the behavior of the algorithm when executing it.
 
 
