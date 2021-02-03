@@ -71,3 +71,4 @@ that allows to facilitate the development and optimize the program.*
 | [Visitor](src/BehavioralPatterns/Visitor)	| It describes the operation that is performed on objects of other classes. When changing the Visitor class, there is no need to change the classes served. **This is one way to adhere to the open/closed principle.** |
 | [Interpreter](src/BehavioralPatterns/Interpreter) | It solves a frequently encountered, but subject to change, task. |
  
+
