@@ -16,4 +16,3 @@ interface BearInterface
      */
     public function roar();
 }
-

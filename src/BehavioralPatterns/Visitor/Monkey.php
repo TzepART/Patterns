@@ -9,7 +9,6 @@ namespace Patterns\BehavioralPatterns\Visitor;
  */
 class Monkey implements AnimalInterface
 {
-
     public function shout()
     {
         echo 'Ooh oo aa aa!' . PHP_EOL;

@@ -36,8 +36,9 @@ class VariableExpression extends Expression
      */
     public function interpret(InterpreterContext $context)
     {
-        if (!is_null($this->val))
+        if (!is_null($this->val)) {
             $context->replace($this, $this->val);
+        }
     }
 
     /**
@@ -55,5 +56,4 @@ class VariableExpression extends Expression
     {
         return $this->name;
     }
-
 }

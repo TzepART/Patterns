@@ -31,5 +31,4 @@ class LiteralExpression extends Expression
     {
         $context->replace($this, $this->value);
     }
-
 }

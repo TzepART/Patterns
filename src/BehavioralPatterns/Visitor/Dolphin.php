@@ -9,7 +9,6 @@ namespace Patterns\BehavioralPatterns\Visitor;
  */
 class Dolphin implements AnimalInterface
 {
-
     public function speak()
     {
         echo 'Tuut tuttu tuutt!' . PHP_EOL;

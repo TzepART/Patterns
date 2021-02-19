@@ -24,4 +24,3 @@ interface CommandInterface
      */
     public function redo();
 }
-

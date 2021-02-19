@@ -14,4 +14,3 @@ interface DoorInterface
      */
     public function getDescription();
 }
-

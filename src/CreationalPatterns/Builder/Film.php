@@ -88,5 +88,4 @@ class Film
     {
         return $this->operator;
     }
-
 }

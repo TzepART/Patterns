@@ -20,5 +20,4 @@ class BooleanOrExpression extends OperatorExpression
         $context->replace($this, $resultLeft || $resultRight);
         return $this;
     }
-
 }

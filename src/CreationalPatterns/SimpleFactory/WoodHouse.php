@@ -63,5 +63,4 @@ class WoodHouse implements HouseInterface
         $this->countWindows = $countWindows;
         return $this;
     }
-
 }

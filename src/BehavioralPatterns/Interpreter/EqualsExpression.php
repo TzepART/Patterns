@@ -21,5 +21,4 @@ class EqualsExpression extends OperatorExpression
         $context->replace($this, $resultLeft == $resultRight);
         return $this;
     }
-
 }

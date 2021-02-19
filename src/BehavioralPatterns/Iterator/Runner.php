@@ -16,7 +16,7 @@ class Runner implements RunnerInterface
         $stationList->addStation(new RadioStation(102));
         $stationList->addStation(new RadioStation(103.2));
 
-        foreach($stationList as $station) {
+        foreach ($stationList as $station) {
             echo $station->getFrequency() . PHP_EOL;
         }
 

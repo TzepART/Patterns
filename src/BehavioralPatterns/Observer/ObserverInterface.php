@@ -13,5 +13,5 @@ interface ObserverInterface
      * @param JobPost $job
      * @return mixed
      */
-    function onJobPosted(JobPost $job);
+    public function onJobPosted(JobPost $job);
 }

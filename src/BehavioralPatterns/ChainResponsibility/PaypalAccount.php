@@ -23,4 +23,3 @@ class PaypalAccount extends Account
         $this->balance = $balance;
     }
 }
-

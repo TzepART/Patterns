@@ -20,4 +20,3 @@ interface WebPageInterface
      */
     public function getContent();
 }
-

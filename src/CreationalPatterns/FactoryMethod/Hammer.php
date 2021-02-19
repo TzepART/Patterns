@@ -15,5 +15,4 @@ class Hammer extends Tool
     {
         echo "Bam Bam Bam!!!" . PHP_EOL;
     }
-
 }

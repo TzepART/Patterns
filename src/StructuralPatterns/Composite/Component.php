@@ -94,4 +94,3 @@ class Component
         return $this->getBasePath() . '/' . $this->getName();
     }
 }
-

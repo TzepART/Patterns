@@ -9,7 +9,6 @@ namespace Patterns\BehavioralPatterns\Visitor;
  */
 class Lion implements AnimalInterface
 {
-
     public function roar()
     {
         echo 'Roaaar!' . PHP_EOL;

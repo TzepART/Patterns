@@ -14,4 +14,3 @@ interface ToolInterface
      */
     public function makeAction();
 }
-

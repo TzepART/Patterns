@@ -51,6 +51,5 @@ abstract class OperatorExpression extends Expression
      * @param $resultRight
      * @return mixed
      */
-    protected abstract function doInterpret(InterpreterContext $context, $resultLeft, $resultRight);
-
+    abstract protected function doInterpret(InterpreterContext $context, $resultLeft, $resultRight);
 }

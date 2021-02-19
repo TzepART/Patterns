@@ -12,13 +12,13 @@ class Runner implements RunnerInterface
         //Create example for sorting
         $dataSet = [1, 5, 4, 3, 2, 8, 1, 1, 5, 4, 3, 2, 8, 1, 1, 5, 4, 3, 2, 8, 1];
 
-        if(count($dataSet) > 10){
+        if (count($dataSet) > 10) {
             $sorter = new Sorter(new QuickSortStrategy());
-        }else{
+        } else {
             $sorter = new Sorter(new BubbleSortStrategy());
         }
 
         $result = $sorter->sort($dataSet);
-        echo implode(',',$result).PHP_EOL;
+        echo implode(',', $result).PHP_EOL;
     }
 }

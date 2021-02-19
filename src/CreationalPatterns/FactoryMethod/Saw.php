@@ -15,5 +15,4 @@ class Saw extends Tool
     {
         echo "Vzhzhzhzh!!!" . PHP_EOL;
     }
-
 }

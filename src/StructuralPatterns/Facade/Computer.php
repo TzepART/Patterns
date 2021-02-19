@@ -9,7 +9,6 @@ namespace Patterns\StructuralPatterns\Facade;
  */
 class Computer
 {
-
     public function getElectricShock()
     {
         echo 'Ouch!' . PHP_EOL;

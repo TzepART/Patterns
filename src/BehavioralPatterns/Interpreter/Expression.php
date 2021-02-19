@@ -23,7 +23,7 @@ abstract class Expression
      * @param InterpreterContext $context
      * @return mixed
      */
-    public abstract function interpret(InterpreterContext $context);
+    abstract public function interpret(InterpreterContext $context);
 
     /**
      * @return int|null
@@ -36,5 +36,4 @@ abstract class Expression
         }
         return $this->key;
     }
-
 }

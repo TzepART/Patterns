@@ -34,5 +34,4 @@ class InterpreterContext
     {
         return $this->expressionStore[$exp->getKey()];
     }
-
 }
