@@ -24,9 +24,9 @@ class About implements WebPageInterface
     }
 
     /**
-     * @return mixed|string
+     * @return string
      */
-    public function getContent()
+    public function getContent(): string
     {
         return "About page in " . $this->theme->getColor() . PHP_EOL;
     }
