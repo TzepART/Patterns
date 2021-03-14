@@ -11,7 +11,6 @@ namespace Patterns\CreationalPatterns\Builder;
  */
 class FilmBuilder
 {
-
     /**
      * @var string
      */
@@ -88,9 +87,9 @@ class FilmBuilder
     }
 
     /**
-     * @return Film
+     * @return FilmInterface
      */
-    public function build(): Film
+    public function build(): FilmInterface
     {
         return new Film($this);
     }

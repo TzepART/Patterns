@@ -8,7 +8,7 @@ namespace Patterns\CreationalPatterns\Builder;
  *
  * Class Film
  */
-class Film
+class Film implements FilmInterface
 {
 
     /**
