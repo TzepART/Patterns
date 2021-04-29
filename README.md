@@ -70,4 +70,3 @@ that allows to facilitate the development and optimize the program.*
 | [Template method](src/BehavioralPatterns/TemplateMethod)	| The pattern defines the basis of the algorithm in the parent class and allows child classes to redefine some steps of the algorithm without changing its structure as a whole. |
 | [Visitor](src/BehavioralPatterns/Visitor)	| It describes the operation that is performed on objects of other classes. When changing the Visitor class, there is no need to change the classes served. **This is one way to adhere to the open/closed principle.** |
 | [Interpreter](src/BehavioralPatterns/Interpreter) | It solves a frequently encountered, but subject to change, task. |
-
