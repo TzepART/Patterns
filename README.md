@@ -7,16 +7,18 @@ If you have PHP version >=7.1, than make in terminal next commands
 ``` shell script
 git clone https://github.com/TzepART/examples-of-patterns.git
 cd examples-of-patterns
-composer install
+make app_start
 ```
 
 For running one of example:
 ``` shell script
+make app_bash
 ./public/runner.php {type_of_pattern} {name_of_pattern}
 ```
 
 Example running:
 ``` shell script
+make app_bash
 ./public/runner.php BehavioralPatterns Command
 ```
 
