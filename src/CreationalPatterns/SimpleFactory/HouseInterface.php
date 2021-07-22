@@ -8,13 +8,6 @@ namespace Patterns\CreationalPatterns\SimpleFactory;
  */
 interface HouseInterface
 {
-    /**
-     * @return mixed
-     */
-    public function getCountDoors();
-
-    /**
-     * @return mixed
-     */
-    public function getCountWindows();
+    public function getCountDoors(): int;
+    public function getCountWindows(): int;
 }

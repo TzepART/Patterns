@@ -5,7 +5,7 @@
     }
   },
   "require": {
-    "php": ">=7.1",
+    "php": ">=8.0",
     "friendsofphp/php-cs-fixer": "^2.18"
   }
 }

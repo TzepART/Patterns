@@ -8,57 +8,28 @@ namespace Patterns\CreationalPatterns\SimpleFactory;
  */
 class WoodHouse implements HouseInterface
 {
-    /**
-     * @var int
-     */
-    private $countDoors;
-    /**
-     * @var int
-     */
-    private $countWindows;
+    public function __construct(
+        private int $countDoors,
+        private int $countWindows
+    ){}
 
-    /**
-     * WoodHouse constructor.
-     * @param int $countDoors
-     * @param int $countWindows
-     */
-    public function __construct(int $countDoors, int $countWindows)
-    {
-        $this->countDoors = $countDoors;
-        $this->countWindows = $countWindows;
-    }
-
-    /**
-     * @return int
-     */
     public function getCountDoors(): int
     {
         return $this->countDoors;
     }
 
-    /**
-     * @param int $countDoors
-     * @return $this
-     */
-    public function setCountDoors(int $countDoors)
+    public function setCountDoors(int $countDoors): self
     {
         $this->countDoors = $countDoors;
         return $this;
     }
 
-    /**
-     * @return int
-     */
     public function getCountWindows(): int
     {
         return $this->countWindows;
     }
 
-    /**
-     * @param int $countWindows
-     * @return $this
-     */
-    public function setCountWindows(int $countWindows)
+    public function setCountWindows(int $countWindows): self
     {
         $this->countWindows = $countWindows;
         return $this;
