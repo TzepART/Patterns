@@ -8,10 +8,7 @@ namespace Patterns\CreationalPatterns\FactoryMethod;
  */
 class Saw extends Tool
 {
-    /**
-     * @return mixed|void
-     */
-    public function makeAction()
+    public function makeAction(): void
     {
         echo "Vzhzhzhzh!!!" . PHP_EOL;
     }
