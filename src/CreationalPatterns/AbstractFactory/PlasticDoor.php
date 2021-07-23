@@ -9,10 +9,7 @@ namespace Patterns\CreationalPatterns\AbstractFactory;
  */
 class PlasticDoor implements DoorInterface
 {
-    /**
-     * @return mixed|void
-     */
-    public function getDescription()
+    public function getDescription(): void
     {
         echo 'I am a plastic door' . PHP_EOL;
     }

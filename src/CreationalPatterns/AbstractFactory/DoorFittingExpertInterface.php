@@ -9,8 +9,5 @@ namespace Patterns\CreationalPatterns\AbstractFactory;
  */
 interface DoorFittingExpertInterface
 {
-    /**
-     * @return mixed
-     */
-    public function getDescription();
+    public function getDescription(): void;
 }
