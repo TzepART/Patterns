@@ -9,54 +9,31 @@ namespace Patterns\CreationalPatterns\Prototype;
  */
 class Sheep
 {
-    /**
-     * @var string
-     */
-    protected $name;
-    /**
-     * @var string
-     */
-    protected $category;
+    public function __construct(
+        private string $name,
+        private string $category = 'Mountain Sheep'
+    ){}
 
-    /**
-     * Sheep constructor.
-     * @param string $name
-     * @param string $category
-     */
-    public function __construct(string $name, string $category = 'Mountain Sheep')
+    public function setName(string $name): self
     {
         $this->name = $name;
-        $this->category = $category;
+
+        return $this;
     }
 
-    /**
-     * @param string $name
-     */
-    public function setName(string $name)
-    {
-        $this->name = $name;
-    }
-
-    /**
-     * @return string
-     */
-    public function getName()
+    public function getName(): string
     {
         return $this->name;
     }
 
-    /**
-     * @param string $category
-     */
-    public function setCategory(string $category)
+    public function setCategory(string $category): self
     {
         $this->category = $category;
+
+        return $this;
     }
 
-    /**
-     * @return string
-     */
-    public function getCategory()
+    public function getCategory(): string
     {
         return $this->category;
     }
