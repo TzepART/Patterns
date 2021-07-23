@@ -12,3 +12,11 @@ app_start: ## Run project
 .PHONY: app_bash
 app_bash: ## Docker PHP console
 	@docker compose exec app bash
+
+.PHONY: app_stop
+app_stop: ## Stop containers
+	@docker compose stop
+
+.PHONY: app_down
+app_down: ## Remove containers and network
+	@docker compose down
