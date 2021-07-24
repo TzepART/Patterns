@@ -9,10 +9,8 @@ namespace Patterns\StructuralPatterns\Adapter;
  * Interface BearInterface
  * @package Patterns\StructuralPatterns\Adapter
  */
-interface BearInterface
+interface TeamLeadInterface
 {
-    /**
-     * @return mixed
-     */
-    public function roar();
+    public function lead(): void;
+    public function plan(): void;
 }
