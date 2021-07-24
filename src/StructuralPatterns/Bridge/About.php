@@ -9,25 +9,10 @@ namespace Patterns\StructuralPatterns\Bridge;
  */
 class About implements WebPageInterface
 {
-    /**
-     * @var ThemeInterface
-     */
-    protected $theme;
+    public function __construct(protected ThemeInterface $theme){}
 
-    /**
-     * About constructor.
-     * @param ThemeInterface $theme
-     */
-    public function __construct(ThemeInterface $theme)
-    {
-        $this->theme = $theme;
-    }
-
-    /**
-     * @return string
-     */
     public function getContent(): string
     {
-        return "About page in " . $this->theme->getColor() . PHP_EOL;
+        return 'About page in ' . $this->theme->getColor() . PHP_EOL;
     }
 }

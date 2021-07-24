@@ -9,8 +9,5 @@ namespace Patterns\StructuralPatterns\Bridge;
  */
 interface ThemeInterface
 {
-    /**
-     * @return mixed
-     */
-    public function getColor();
+    public function getColor(): string;
 }

@@ -9,11 +9,8 @@ namespace Patterns\StructuralPatterns\Bridge;
  */
 class DarkTheme implements ThemeInterface
 {
-    /**
-     * @return mixed|string
-     */
-    public function getColor()
+    public function getColor(): string
     {
-        return 'Dark Black' . PHP_EOL;
+        return 'Dark Black';
     }
 }

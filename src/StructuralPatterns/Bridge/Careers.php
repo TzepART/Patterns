@@ -9,25 +9,10 @@ namespace Patterns\StructuralPatterns\Bridge;
  */
 class Careers implements WebPageInterface
 {
-    /**
-     * @var ThemeInterface
-     */
-    protected $theme;
+    public function __construct(protected ThemeInterface $theme){}
 
-    /**
-     * Careers constructor.
-     * @param ThemeInterface $theme
-     */
-    public function __construct(ThemeInterface $theme)
-    {
-        $this->theme = $theme;
-    }
-
-    /**
-     * @return string
-     */
     public function getContent(): string
     {
-        return "Careers page in " . $this->theme->getColor() . PHP_EOL;
+        return 'Careers page in ' . $this->theme->getColor() . PHP_EOL;
     }
 }

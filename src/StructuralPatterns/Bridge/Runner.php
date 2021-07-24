@@ -13,12 +13,12 @@ class Runner implements RunnerInterface
          * Example with different web-page's templates
          */
         $darkTheme = new DarkTheme();
-        $lightTheme = new LightTheme();
+        $aquaTheme = new AquaTheme();
 
-        $about = new About($darkTheme);
-        $careers = new Careers($lightTheme);
+        $about = new About(theme: $darkTheme);
+        $careers = new Careers(theme: $aquaTheme);
 
-        echo $about->getContent(); // "About page in Dark Black";
-        echo $careers->getContent(); // "Careers page in Light Black";
+        echo $about->getContent(); // 'About page in Dark Black';
+        echo $careers->getContent(); // 'Careers page in Light blue';
     }
 }

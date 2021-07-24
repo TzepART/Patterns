@@ -9,11 +9,8 @@ namespace Patterns\StructuralPatterns\Bridge;
  */
 class AquaTheme implements ThemeInterface
 {
-    /**
-     * @return mixed|string
-     */
-    public function getColor()
+    public function getColor(): string
     {
-        return 'Light blue' . PHP_EOL;
+        return 'Light blue';
     }
 }
