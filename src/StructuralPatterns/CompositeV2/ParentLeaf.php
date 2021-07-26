@@ -1,31 +1,16 @@
 <?php
 declare(strict_types=1);
 
-
 namespace Patterns\StructuralPatterns\CompositeV2;
-
 
 class ParentLeaf implements CompositeInterface, LeafInterface
 {
-    /**
-     * @var CompositeInterface|null
-     */
-    private $parent;
+    use ParentTrait;
 
-    /**
-     * @var array
-     */
-    private $children = [];
+    private array $children = [];
 
-    /**
-     * @var string
-     */
-    private $path;
-
-    public function __construct(string $path)
-    {
-        $this->path = $path;
-    }
+    public function __construct(private string $path)
+    {}
 
     public function addLeaf(LeafInterface $leaf): self
     {
@@ -43,17 +28,5 @@ class ParentLeaf implements CompositeInterface, LeafInterface
     public function getPath(): string
     {
         return $this->path;
-    }
-
-    public function getParentLeaf(): ?CompositeInterface
-    {
-        return $this->parent;
-    }
-
-    public function setParent(CompositeInterface $parent): self
-    {
-        $this->parent = $parent;
-
-        return $this;
     }
 }
