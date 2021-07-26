@@ -3,18 +3,16 @@ declare(strict_types=1);
 
 namespace Patterns\CreationalPatterns\SimpleFactory;
 
+use JetBrains\PhpStorm\Pure;
+
 /**
  * Class HouseFactory
  * @package Patterns\CreationalPatterns\SimpleFactory
  */
 class HouseFactory
 {
-    /**
-     * @param int $countDoors
-     * @param int $countWindows
-     * @return WoodHouse
-     */
-    public static function makeHouse(int $countDoors = 0, int $countWindows = 0)
+    #[Pure]
+    public static function makeHouse(int $countDoors = 0, int $countWindows = 0): HouseInterface
     {
         return new WoodHouse($countDoors, $countWindows);
     }

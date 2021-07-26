@@ -8,13 +8,6 @@ namespace Patterns\CreationalPatterns\SimpleFactory;
  */
 interface DoorInterface
 {
-    /**
-     * @return float
-     */
     public function getWidth(): float;
-
-    /**
-     * @return float
-     */
     public function getHeight(): float;
 }

@@ -14,16 +14,16 @@ class Runner implements RunnerInterface
         echo $someCoffee->getDescription() . PHP_EOL; // Simple CoffeeInterface
 
 
-        $someCoffee = new MilkCoffee($someCoffee);
+        $someCoffee = new MilkCoffeeDecorator(coffee: $someCoffee);
         echo $someCoffee->getFormattedCost() . PHP_EOL; // Cost - 12
         echo $someCoffee->getDescription() . PHP_EOL; // Simple CoffeeInterface, milk
 
 
-        $someCoffee = new WhipCoffee($someCoffee);
+        $someCoffee = new WhipCoffeeDecorator(coffee: $someCoffee);
         echo $someCoffee->getFormattedCost() . PHP_EOL; // Cost - 17
         echo $someCoffee->getDescription() . PHP_EOL; // Simple CoffeeInterface, milk, whip
 
-        $someCoffee = new VanillaCoffee($someCoffee);
+        $someCoffee = new VanillaCoffeeDecorator(coffee: $someCoffee);
         echo $someCoffee->getFormattedCost() . PHP_EOL; // Cost - 20
         echo $someCoffee->getDescription() . PHP_EOL; // Simple CoffeeInterface, milk, whip, vanilla
     }

@@ -18,12 +18,11 @@ class Runner implements RunnerInterface
         $shop->takeOrder('without sugar', 5);
 
         $shop->serve();
-        /**
-         * Output:
-         * Serving tea to table# 1. Using tea - 1
-         * Serving tea to table# 2. Using tea - 2
-         * Serving tea to table# 3. Using tea - 2
-         * Serving tea to table# 5. Using tea - 1
-         * */
+        //  Output:
+        //  Serving tea to table #1. Using tea - 1
+        //  Serving tea to table #2. Using tea - 2
+        //  Serving tea to table #3. Using tea - 2
+        //  Serving tea to table #5. Using tea - 1
+
     }
 }

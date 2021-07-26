@@ -9,14 +9,14 @@ class Runner implements RunnerInterface
 {
     public static function using(): void
     {
-        $root = new CDirectory('root');
-        $dir1 = new CDirectory('dir1', $root);
-        $dir2 = new CDirectory('dir2', $root);
-        $dir3 = new CDirectory('dir3', $root);
-        $dir4 = new CDirectory('dir4', $dir2);
-        $file1 = new CFile('file1', 'txt', $dir1);
-        $file2 = new CFile('doc', 'pdf', $dir4);
+        $root = new Directory(name: 'root');
+        $dir1 = new Directory(name: 'dir1', parent: $root);
+        $dir2 = new Directory(name: 'dir2', parent: $root);
+        $dir3 = new Directory(name: 'dir3', parent: $root);
+        $dir4 = new Directory(name: 'dir4', parent: $dir2);
+        $file1 = new File(name: 'file1', parent: $dir1, type: 'txt');
+        $file2 = new File(name: 'doc', parent: $dir4, type: 'pdf');
 
-        $root->showChildsTree();
+        (new ComponentViewer())->showChildrenTree(parent: $root);
     }
 }

@@ -12,15 +12,15 @@ class Runner implements RunnerInterface
         /**
          * Using DoorFactory
          */
-        $door = DoorFactory::makeDoor(100, 200);
+        $door = DoorFactory::makeDoor(width: 100, height: 200);
         echo 'Width: ' . $door->getWidth() . PHP_EOL;
         echo 'Height: ' . $door->getHeight() . PHP_EOL;
 
         /**
          * Using HouseFactory
          */
-        $door = HouseFactory::makeHouse(4, 6);
-        echo 'Count doors: ' . $door->getCountDoors() . PHP_EOL;
-        echo 'Count windows: ' . $door->getCountWindows() . PHP_EOL;
+        $house = HouseFactory::makeHouse(countDoors: 4, countWindows: 6);
+        echo 'Count doors: ' . $house->getCountDoors() . PHP_EOL;
+        echo 'Count windows: ' . $house->getCountWindows() . PHP_EOL;
     }
 }

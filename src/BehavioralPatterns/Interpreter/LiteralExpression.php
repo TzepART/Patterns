@@ -7,27 +7,12 @@ namespace Patterns\BehavioralPatterns\Interpreter;
  * Class LiteralExpression
  * @package Patterns\BehavioralPatterns\Interpreter
  */
-class LiteralExpression extends Expression
+class LiteralExpression extends AbstractExpression
 {
-    /**
-     * @var null
-     */
-    private $value = null;
+    public function __construct(private string $value)
+    {}
 
-    /**
-     * LiteralExpression constructor.
-     * @param $value
-     */
-    public function __construct($value)
-    {
-        $this->value = $value;
-    }
-
-    /**
-     * @param InterpreterContext $context
-     * @return mixed|void
-     */
-    public function interpret(InterpreterContext $context)
+    public function interpret(InterpreterContext $context): void
     {
         $context->replace($this, $this->value);
     }

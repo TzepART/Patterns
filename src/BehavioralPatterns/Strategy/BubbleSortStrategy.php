@@ -9,10 +9,6 @@ namespace Patterns\BehavioralPatterns\Strategy;
  */
 class BubbleSortStrategy implements SortStrategyInterface
 {
-    /**
-     * @param array $dataSet
-     * @return array
-     */
     public function sort(array $dataSet): array
     {
         echo 'Sorting using bubble sort' . PHP_EOL;

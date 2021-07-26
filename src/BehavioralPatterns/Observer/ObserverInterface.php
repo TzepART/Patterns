@@ -9,9 +9,5 @@ namespace Patterns\BehavioralPatterns\Observer;
  */
 interface ObserverInterface
 {
-    /**
-     * @param JobPost $job
-     * @return mixed
-     */
-    public function onJobPosted(JobPost $job);
+    public function onJobPosted(PostInterface $jobPost);
 }

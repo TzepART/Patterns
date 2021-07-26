@@ -4,33 +4,22 @@ declare(strict_types=1);
 namespace Patterns\StructuralPatterns\Flyweight;
 
 /**
- * Make class of tea and a teapot.
- *
- * Class Tea
+ * @description Make class of tea.
  * @package Patterns\StructuralPatterns\Flyweight
  */
-class Tea
+class Tea implements TeaInterface
 {
-    /**
-     * @var integer
-     */
-    protected $countUsing;
+    protected int $countUsing;
 
-    /**
-     * @return int
-     */
     public function getCountUsing(): int
     {
         return $this->countUsing;
     }
 
-    /**
-     * @param int $countUsing
-     * @return $this
-     */
-    public function setCountUsing(int $countUsing)
+    public function setCountUsing(int $countUsing): self
     {
         $this->countUsing = $countUsing;
+
         return $this;
     }
 }

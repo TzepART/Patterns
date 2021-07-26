@@ -4,31 +4,21 @@ declare(strict_types=1);
 namespace Patterns\StructuralPatterns\Flyweight;
 
 /**
- * Create TeaShop, that makes and serves orders
- *
- * Class TeaShop
+ * @description Create TeaShop, that makes and serves orders
  * @package Patterns\StructuralPatterns\Flyweight
  */
-class TeaShop
+final class TeaShop
 {
     /**
-     * @var
+     * @var array<int, TeaInterface>
      */
-    protected $orders;
-
-    /**
-     * @var TeaMaker
-     */
-    protected $teaMaker;
+    protected array $orders = [];
 
     /**
      * TeaShop constructor.
-     * @param TeaMaker $teaMaker
      */
-    public function __construct(TeaMaker $teaMaker)
-    {
-        $this->teaMaker = $teaMaker;
-    }
+    public function __construct(private TeaMaker $teaMaker)
+    {}
 
     /**
      * @param string $teaType
@@ -39,12 +29,10 @@ class TeaShop
         $this->orders[$table] = $this->teaMaker->make($teaType);
     }
 
-
     public function serve()
     {
-        /** @var Tea $tea */
         foreach ($this->orders as $table => $tea) {
-            echo "Serving tea to table# " . $table . ". Using tea - " . $tea->getCountUsing() . PHP_EOL;
+            echo sprintf('Serving tea to table #%d Using tea - %d', $table, $tea->getCountUsing()) . PHP_EOL;
         }
     }
 }

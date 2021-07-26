@@ -10,12 +10,19 @@ class Runner implements RunnerInterface
     public static function using(): void
     {
         /**
-         * Now hunter can hunt bear and rabbit
+         * Now HrManager can hunt team-leads
          */
-        $rabbit = new Rabbit();
-        $rabbitAdapter = new RabbitAdapter($rabbit);
+        $hunter = new HrManager();
 
-        $hunter = new Hunter();
-        $hunter->hunt($rabbitAdapter);
+        $backTeamLead = new BackendTeamLead();
+        $hunter->hunt(teamLead: $backTeamLead);
+
+        $mobileTeamLead = new MobileTeamLead();
+        $hunter->hunt(teamLead: $mobileTeamLead);
+
+        $seniorDeveloper = new SeniorPHPDeveloper();
+        // But, He is not a TeamLead :(((. Use Adapter
+        $seniorDeveloperAdapter = new SeniorDeveloperAdapter(developer: $seniorDeveloper);
+        $hunter->hunt(teamLead: $seniorDeveloperAdapter);
     }
 }

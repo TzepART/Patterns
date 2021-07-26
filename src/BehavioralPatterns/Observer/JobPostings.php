@@ -10,35 +10,24 @@ namespace Patterns\BehavioralPatterns\Observer;
 class JobPostings implements ObservableInterface
 {
     /**
-     * @var array
+     * @var ObserverInterface[]
      */
-    protected $observers = [];
+    protected array $observers = [];
 
-    /**
-     * @param JobPost $jobPosting
-     */
-    protected function notify(JobPost $jobPosting)
-    {
-        foreach ($this->observers as $observer) {
-            $observer->onJobPosted($jobPosting);
-        }
-    }
-
-    /**
-     * @param ObserverInterface $observer
-     * @return mixed|void
-     */
-    public function attach(ObserverInterface $observer)
+    public function attach(ObserverInterface $observer): void
     {
         $this->observers[] = $observer;
     }
 
-    /**
-     * @param JobPost $jobPosting
-     * @return mixed|void
-     */
-    public function addJob(JobPost $jobPosting)
+    public function addJob(PostInterface $jobPosting): void
     {
         $this->notify($jobPosting);
+    }
+
+    protected function notify(PostInterface $jobPosting)
+    {
+        foreach ($this->observers as $observer) {
+            $observer->onJobPosted($jobPosting);
+        }
     }
 }

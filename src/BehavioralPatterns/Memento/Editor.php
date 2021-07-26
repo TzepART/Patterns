@@ -4,47 +4,30 @@ declare(strict_types=1);
 namespace Patterns\BehavioralPatterns\Memento;
 
 /**
- * Create class Editor, that will be use EditorMemento
- *
- * Class Editor
+ * @description Create class Editor, that will be use EditorMemento
  * @package Patterns\BehavioralPatterns\Memento
  */
-class Editor
+class Editor implements EditorInterface, EditorTransactionInterface
 {
-    /**
-     * @var string
-     */
-    protected $content = '';
+    protected string $content = '';
 
-    /**
-     * @param string $words
-     */
-    public function type(string $words)
+    public function addContent(string $content)
     {
-        $this->content = $this->content . ' ' . $words;
+        $this->content = sprintf('%s %s',$this->content, $content);
     }
 
-    /**
-     * @return string
-     */
-    public function getContent()
+    public function getContent(): string
     {
         return $this->content;
     }
 
-    /**
-     * @return EditorMemento
-     */
-    public function save()
+    public function save(): EditorMementoInterface
     {
-        return new EditorMemento($this->content);
+        return new EditorMemento(clone $this);
     }
 
-    /**
-     * @param EditorMemento $memento
-     */
-    public function restore(EditorMemento $memento)
+    public function rollback(EditorMementoInterface $memento): void
     {
-        $this->content = $memento->getContent();
+        $this->content = $memento->getEditor()->getContent();
     }
 }

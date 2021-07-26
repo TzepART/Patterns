@@ -9,23 +9,16 @@ namespace Patterns\CreationalPatterns\Singleton;
  */
 final class MainBoss
 {
-    /**
-     * @var
-     */
     private static $instance;
 
-    /**
-     * MainBoss constructor.
-     */
+    // hide construct
     private function __construct()
-    {
-        // hide construct
-    }
+    {}
 
     /**
      * @return MainBoss
      */
-    public static function getInstance(): MainBoss
+    public static function getInstance(): self
     {
         if (!self::$instance) {
             self::$instance = new self();
@@ -34,14 +27,7 @@ final class MainBoss
         return self::$instance;
     }
 
+    // hide cloning
     private function __clone()
-    {
-        // hide cloning
-    }
-
-
-    private function __wakeup()
-    {
-        // hide deserialization
-    }
+    {}
 }

@@ -9,10 +9,10 @@ namespace Patterns\CreationalPatterns\FactoryMethod;
 abstract class Tool implements ToolInterface
 {
     /**
-     * @param $toolClass
+     * @param class-string $toolClass
      * @return mixed
      */
-    public static function initial($toolClass)
+    public static function initial(string $toolClass): ToolInterface
     {
         return new $toolClass;
     }

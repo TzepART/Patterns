@@ -3,92 +3,48 @@ declare(strict_types=1);
 
 namespace Patterns\CreationalPatterns\Builder;
 
+use JetBrains\PhpStorm\Pure;
+
 /**
  * Add builder for Film
  *
  * Class FilmBuilder
  * @package Patterns\CreationalPatterns\Builder
  */
-class FilmBuilder
+class FilmBuilder implements FilmBuilderInterface
 {
-    /**
-     * @var string
-     */
-    public $title;
+    public string $director = "Unknown";
+    public string $producer = "Unknown";
+    public string $mainCharacter = "Unknown";
+    public string $operator = "Unknown";
 
-    /**
-     * @var string
-     */
-    public $director = "Unknown";
+    public function __construct(public string $title){}
 
-    /**
-     * @var string
-     */
-    public $producer = "Unknown";
-
-    /**
-     * @var string
-     */
-    public $mainCharacter = "Unknown";
-
-    /**
-     * @var string
-     */
-    public $operator = "Unknown";
-
-    /**
-     * FilmBuilder constructor.
-     * @param $title
-     */
-    public function __construct(string $title)
-    {
-        $this->title = $title;
-    }
-
-
-    /**
-     * @param string $director
-     * @return $this
-     */
-    public function addDirector(string $director)
+    public function addDirector(string $director): self
     {
         $this->director = $director;
         return $this;
     }
 
-    /**
-     * @param string $producer
-     * @return $this
-     */
-    public function addProducer(string $producer)
+    public function addProducer(string $producer): self
     {
         $this->producer = $producer;
         return $this;
     }
 
-    /**
-     * @param string $mainCharacter
-     * @return $this
-     */
-    public function addMainCharacter(string $mainCharacter)
+    public function addMainCharacter(string $mainCharacter): self
     {
         $this->mainCharacter = $mainCharacter;
         return $this;
     }
 
-    /**
-     * @param string $operator
-     * @return $this
-     */
-    public function addOperator(string $operator)
+    public function addOperator(string $operator): self
     {
         $this->operator = $operator;
         return $this;
     }
 
-    /**
-     * @return FilmInterface
-     */
+    #[Pure]
     public function build(): FilmInterface
     {
         return new Film($this);

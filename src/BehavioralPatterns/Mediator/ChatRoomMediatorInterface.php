@@ -4,17 +4,10 @@ declare(strict_types=1);
 namespace Patterns\BehavioralPatterns\Mediator;
 
 /**
- * Create an "Mediator"
- *
- * Interface ChatRoomMediator
+ * @description Create an "Mediator"
  * @package Patterns\BehavioralPatterns\Mediator
  */
 interface ChatRoomMediatorInterface
 {
-    /**
-     * @param User $user
-     * @param string $message
-     * @return mixed
-     */
-    public function showMessage(User $user, string $message);
+    public function showMessage(User $user, string $message): void;
 }

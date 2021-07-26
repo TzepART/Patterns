@@ -9,10 +9,7 @@ namespace Patterns\CreationalPatterns\AbstractFactory;
  */
 class PlasticMaster implements DoorFittingExpertInterface
 {
-    /**
-     * @return mixed|void
-     */
-    public function getDescription()
+    public function getDescription(): void
     {
         echo 'I can only plastic wooden doors' . PHP_EOL;
     }

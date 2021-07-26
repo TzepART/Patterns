@@ -16,18 +16,12 @@ class Runner implements RunnerInterface
         $lion = new Lion();
         $dolphin = new Dolphin();
 
-        $speak = new Speak();
-
-        $monkey->accept($speak);  //Ooh oo aa aa!
-        $lion->accept($speak);    //Roaaar!
-        $dolphin->accept($speak); //Tuut tuttu tuutt!
-
         /**
          * We could do this simply by using the inheritance hierarchy, but then we would have to modify
          * the animals each time you added new actions to them. And here you do not need to change them.
          * For example, we can add jumping to animals by simply creating a new visitor:
          */
-
+        $speak = new Speak();
         $jump = new Jump();
 
         $monkey->accept($speak);   // Ooh oo aa aa!

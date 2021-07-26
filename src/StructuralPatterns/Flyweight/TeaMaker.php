@@ -4,28 +4,21 @@ declare(strict_types=1);
 namespace Patterns\StructuralPatterns\Flyweight;
 
 /**
- * Work as Factory Method but, reusing objects of Tea if can
- *
- * Class TeaMaker
+ * @description Work as Factory Method but, reusing objects of Tea if can
  * @package Patterns\StructuralPatterns\Flyweight
  */
 class TeaMaker
 {
     /**
-     * @var Tea[]
+     * @var array<string, TeaInterface>
      */
-    protected $availableTea = [];
+    protected array $availableTea = [];
 
-    /**
-     * @param $preference
-     * @return Tea
-     */
-    public function make($preference)
+    public function make(string $preference): TeaInterface
     {
         if (empty($this->availableTea[$preference])) {
             $this->availableTea[$preference] = (new Tea())->setCountUsing(1);
         } else {
-            /** @var Tea $tea */
             $tea = $this->availableTea[$preference];
             $tea->setCountUsing($tea->getCountUsing() + 1);
         }

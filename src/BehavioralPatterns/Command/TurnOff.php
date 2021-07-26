@@ -9,40 +9,20 @@ namespace Patterns\BehavioralPatterns\Command;
  */
 class TurnOff implements CommandInterface
 {
-    /**
-     * @var Bulb
-     */
-    protected $bulb;
+    public function __construct(private Bulb $bulb)
+    {}
 
-    /**
-     * TurnOff constructor.
-     * @param Bulb $bulb
-     */
-    public function __construct(Bulb $bulb)
-    {
-        $this->bulb = $bulb;
-    }
-
-    /**
-     * @return mixed|void
-     */
-    public function execute()
+    public function execute(): void
     {
         $this->bulb->turnOff();
     }
 
-    /**
-     * @return mixed|void
-     */
-    public function undo()
+    public function undo(): void
     {
         $this->bulb->turnOn();
     }
 
-    /**
-     * @return mixed|void
-     */
-    public function redo()
+    public function redo(): void
     {
         $this->execute();
     }

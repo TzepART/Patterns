@@ -10,31 +10,11 @@ namespace Patterns\CreationalPatterns\Builder;
  */
 class Film implements FilmInterface
 {
-
-    /**
-     * @var string
-     */
-    private $title;
-
-    /**
-     * @var string
-     */
-    private $director;
-
-    /**
-     * @var string
-     */
-    private $producer;
-
-    /**
-     * @var string
-     */
-    private $mainCharacter;
-
-    /**
-     * @var string
-     */
-    private $operator;
+    private string $title;
+    private string $director;
+    private string $producer;
+    private string $mainCharacter;
+    private string $operator;
 
     /**
      * Film constructor.
@@ -49,41 +29,26 @@ class Film implements FilmInterface
         $this->operator = $filmBuilder->operator;
     }
 
-    /**
-     * @return string
-     */
     public function getTitle(): string
     {
         return $this->title;
     }
 
-    /**
-     * @return string
-     */
     public function getDirector(): string
     {
         return $this->director;
     }
 
-    /**
-     * @return string
-     */
     public function getProducer(): string
     {
         return $this->producer;
     }
 
-    /**
-     * @return string
-     */
     public function getMainCharacter(): string
     {
         return $this->mainCharacter;
     }
 
-    /**
-     * @return string
-     */
     public function getOperator(): string
     {
         return $this->operator;

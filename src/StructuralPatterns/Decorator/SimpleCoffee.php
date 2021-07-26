@@ -10,18 +10,12 @@ class SimpleCoffee implements CoffeeInterface
 {
     use CostTrait;
 
-    /**
-     * @return int
-     */
-    public function getCost()
+    public function getCost(): int
     {
         return 10;
     }
 
-    /**
-     * @return string
-     */
-    public function getDescription()
+    public function getDescription(): string
     {
         return 'Simple coffee';
     }

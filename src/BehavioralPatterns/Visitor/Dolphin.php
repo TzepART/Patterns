@@ -14,11 +14,7 @@ class Dolphin implements AnimalInterface
         echo 'Tuut tuttu tuutt!' . PHP_EOL;
     }
 
-    /**
-     * @param AnimalOperationInterface $operation
-     * @return mixed|void
-     */
-    public function accept(AnimalOperationInterface $operation)
+    public function accept(AnimalOperationInterface $operation): void
     {
         $operation->visitDolphin($this);
     }

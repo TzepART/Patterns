@@ -9,10 +9,7 @@ namespace Patterns\CreationalPatterns\AbstractFactory;
  */
 class Welder implements DoorFittingExpertInterface
 {
-    /**
-     * @return mixed|void
-     */
-    public function getDescription()
+    public function getDescription(): void
     {
         echo 'I can only fit iron doors' . PHP_EOL;
     }

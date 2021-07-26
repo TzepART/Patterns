@@ -9,27 +9,11 @@ namespace Patterns\BehavioralPatterns\Observer;
  */
 class JobSeeker implements ObserverInterface
 {
-    /**
-     * @var string
-     */
-    protected $name;
+    public function __construct(private string $name)
+    {}
 
-    /**
-     * JobSeeker constructor.
-     * @param string $name
-     */
-    public function __construct(string $name)
+    public function onJobPosted(PostInterface $jobPost): void
     {
-        $this->name = $name;
-    }
-
-    /**
-     * @param JobPost $job
-     * @return mixed|void
-     */
-    public function onJobPosted(JobPost $job)
-    {
-        // Do something with the job posting
-        echo 'Hi ' . $this->name . '! New job posted: ' . $job->getTitle() . PHP_EOL;
+        echo sprintf('Hi, %s! New job posted: %s', $this->name, $jobPost->getTitle()) . PHP_EOL;
     }
 }

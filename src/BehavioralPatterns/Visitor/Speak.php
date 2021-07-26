@@ -4,36 +4,22 @@ declare(strict_types=1);
 namespace Patterns\BehavioralPatterns\Visitor;
 
 /**
- * Visitor
- *
- * Class Speak
+ * @description Visitor
  * @package Patterns\BehavioralPatterns\Visitor
  */
 class Speak implements AnimalOperationInterface
 {
-    /**
-     * @param Monkey $monkey
-     * @return mixed|void
-     */
-    public function visitMonkey(Monkey $monkey)
+    public function visitMonkey(Monkey $monkey): void
     {
         $monkey->shout();
     }
 
-    /**
-     * @param Lion $lion
-     * @return mixed|void
-     */
-    public function visitLion(Lion $lion)
+    public function visitLion(Lion $lion): void
     {
         $lion->roar();
     }
 
-    /**
-     * @param Dolphin $dolphin
-     * @return mixed|void
-     */
-    public function visitDolphin(Dolphin $dolphin)
+    public function visitDolphin(Dolphin $dolphin): void
     {
         $dolphin->speak();
     }

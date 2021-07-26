@@ -8,10 +8,7 @@ namespace Patterns\CreationalPatterns\FactoryMethod;
  */
 class Hammer extends Tool
 {
-    /**
-     * @return mixed|void
-     */
-    public function makeAction()
+    public function makeAction(): void
     {
         echo "Bam Bam Bam!!!" . PHP_EOL;
     }

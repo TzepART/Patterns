@@ -15,8 +15,5 @@ interface WebPageInterface
      */
     public function __construct(ThemeInterface $theme);
 
-    /**
-     * @return string
-     */
     public function getContent(): string;
 }

@@ -9,9 +9,5 @@ namespace Patterns\BehavioralPatterns\Strategy;
  */
 interface SortStrategyInterface
 {
-    /**
-     * @param array $dataSet
-     * @return array
-     */
     public function sort(array $dataSet): array;
 }

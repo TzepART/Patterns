@@ -9,28 +9,16 @@ namespace Patterns\BehavioralPatterns\Interpreter;
  */
 class InterpreterContext
 {
+    private array $expressionStore = [];
 
-    /**
-     * @var array
-     */
-    private $expressionStore = [];
-
-    /**
-     * @param Expression $exp
-     * @param $value
-     * @return $this
-     */
-    public function replace(Expression $exp, $value)
+    public function replace(AbstractExpression $exp, string|int|bool $value): self
     {
         $this->expressionStore[$exp->getKey()] = $value;
+
         return $this;
     }
 
-    /**
-     * @param Expression $exp
-     * @return mixed
-     */
-    public function lookup(Expression $exp)
+    public function lookup(AbstractExpression $exp): string|int|bool
     {
         return $this->expressionStore[$exp->getKey()];
     }

@@ -12,5 +12,5 @@ interface ToolInterface
     /**
      * @return mixed
      */
-    public function makeAction();
+    public function makeAction(): void;
 }
