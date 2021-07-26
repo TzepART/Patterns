@@ -1,5 +1,5 @@
 # Patterns
-It's simple project with examples of patterns on PHP
+It's simple project with examples of patterns on PHP 8.0
 
 ## Try running of code
 If you have Docker, then execute in terminal next commands:
