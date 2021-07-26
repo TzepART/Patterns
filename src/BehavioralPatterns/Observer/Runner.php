@@ -14,29 +14,21 @@ class Runner implements RunnerInterface
          * A good example: people looking for work, subscribe to publications on job sites and receive notices
          * when there are vacancies that match the parameters.
          */
+        //Create subscribers
+        $johnDoe = new JobSeeker(name: 'John Doe');
+        $julySmith = new JobSeeker(name: 'July Smith');
 
-        /*
-         * Create subscribers
-         */
-        $johnDoe = new JobSeeker('John Doe');
-        $janeDoe = new JobSeeker('Jane Doe');
-
-        /*
-         * Create publicators and attach subscribers
-         */
+        // Create publicators and attach subscribers
         $jobPostings = new JobPostings();
-        $jobPostings->attach($johnDoe);
-        $jobPostings->attach($janeDoe);
+        $jobPostings->attach(observer: $johnDoe);
+        $jobPostings->attach(observer: $julySmith);
 
-        /*
-         * Add new vacations and look who from subscribers get notice
-         */
-        $jobPostings->addJob(new JobPost('Software Engineer'));
-
+        // Add new vacations and look who from subscribers get notice
+        $jobPostings->addJob(new JobPost(title: 'Software Engineer'));
         /**
          * Output
          * Hi John Doe! New job posted: Software Engineer
-         * Hi Jane Doe! New job posted: Software Engineer
+         * Hi July Smith! New job posted: Software Engineer
          */
     }
 }

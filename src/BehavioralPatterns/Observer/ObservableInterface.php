@@ -4,22 +4,11 @@ declare(strict_types=1);
 namespace Patterns\BehavioralPatterns\Observer;
 
 /**
- * Create publications of vacancies, on which people will subscribe.
- *
- * Interface Observable
+ * @description Create publications of vacancies, on which people will subscribe.
  * @package Patterns\BehavioralPatterns\Observer
  */
 interface ObservableInterface
 {
-    /**
-     * @param ObserverInterface $observer
-     * @return mixed
-     */
-    public function attach(ObserverInterface $observer);
-
-    /**
-     * @param JobPost $jobPosting
-     * @return mixed
-     */
-    public function addJob(JobPost $jobPosting);
+    public function attach(ObserverInterface $observer): void;
+    public function addJob(PostInterface $jobPosting): void;
 }

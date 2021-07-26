@@ -4,31 +4,15 @@ declare(strict_types=1);
 namespace Patterns\BehavioralPatterns\Observer;
 
 /**
- * Create people looking for work, who need to be notified of the appearance of vacancies.
- *
- * Class JobPost
+ * @description Create people looking for work, who need to be notified of the appearance of vacancies.
  * @package Patterns\BehavioralPatterns\Observer
  */
-class JobPost
+class JobPost implements PostInterface
 {
-    /**
-     * @var string
-     */
-    protected $title;
+    public function __construct(private string $title)
+    {}
 
-    /**
-     * JobPost constructor.
-     * @param string $title
-     */
-    public function __construct(string $title)
-    {
-        $this->title = $title;
-    }
-
-    /**
-     * @return string
-     */
-    public function getTitle()
+    public function getTitle(): string
     {
         return $this->title;
     }
