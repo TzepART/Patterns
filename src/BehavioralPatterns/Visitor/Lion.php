@@ -14,11 +14,7 @@ class Lion implements AnimalInterface
         echo 'Roaaar!' . PHP_EOL;
     }
 
-    /**
-     * @param AnimalOperationInterface $operation
-     * @return mixed|void
-     */
-    public function accept(AnimalOperationInterface $operation)
+    public function accept(AnimalOperationInterface $operation): void
     {
         $operation->visitLion($this);
     }

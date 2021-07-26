@@ -14,11 +14,7 @@ class Monkey implements AnimalInterface
         echo 'Ooh oo aa aa!' . PHP_EOL;
     }
 
-    /**
-     * @param AnimalOperationInterface $operation
-     * @return mixed|void
-     */
-    public function accept(AnimalOperationInterface $operation)
+    public function accept(AnimalOperationInterface $operation): void
     {
         $operation->visitMonkey($this);
     }
