@@ -11,10 +11,7 @@ namespace Patterns\BehavioralPatterns\Command;
  */
 class RemoteControl
 {
-    /**
-     * @param CommandInterface $command
-     */
-    public function submit(CommandInterface $command)
+    public function submit(CommandInterface $command): void
     {
         $command->execute();
     }

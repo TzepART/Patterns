@@ -15,7 +15,7 @@ class Runner implements RunnerInterface
         $turnOff = new TurnOff($bulb);
 
         $remote = new RemoteControl();
-        $remote->submit($turnOn); // Bulb has been lit!
-        $remote->submit($turnOff); // Darkness!
+        $remote->submit(command: $turnOn); // Bulb has been lit!
+        $remote->submit(command: $turnOff); // Darkness!
     }
 }
