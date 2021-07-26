@@ -7,52 +7,24 @@ namespace Patterns\BehavioralPatterns\Interpreter;
  * Class VariableExpression
  * @package Patterns\BehavioralPatterns\Interpreter
  */
-class VariableExpression extends Expression
+class VariableExpression extends AbstractExpression
 {
-    /**
-     * @var null
-     */
-    private $name = null;
+    public function __construct(private string $name, private ?string $value = null)
+    {}
 
-    /**
-     * @var null
-     */
-    private $val = null;
-
-    /**
-     * VariableExpression constructor.
-     * @param $name
-     * @param null $val
-     */
-    public function __construct($name, $val = null)
+    public function interpret(InterpreterContext $context): void
     {
-        $this->name = $name;
-        $this->val = $val;
-    }
-
-    /**
-     * @param InterpreterContext $context
-     * @return mixed|void
-     */
-    public function interpret(InterpreterContext $context)
-    {
-        if (!is_null($this->val)) {
-            $context->replace($this, $this->val);
+        if (!is_null($this->value)) {
+            $context->replace(exp: $this, value: $this->value);
         }
     }
 
-    /**
-     * @param $value
-     */
-    public function setValue($value)
+    public function setValue(string $value)
     {
-        $this->val = $value;
+        $this->value = $value;
     }
 
-    /**
-     * @return int|null
-     */
-    public function getKey()
+    public function getKey(): string
     {
         return $this->name;
     }
