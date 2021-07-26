@@ -4,32 +4,16 @@ declare(strict_types=1);
 namespace Patterns\BehavioralPatterns\Memento;
 
 /**
- * Create Class "Memento" where we can save state of editor.
- *
- * Class EditorMemento
+ * @description Create Class "Memento" where we can save state of editor.
  * @package Patterns\BehavioralPatterns\Memento
  */
-class EditorMemento
+class EditorMemento implements EditorMementoInterface
 {
-    /**
-     * @var string
-     */
-    protected $content;
+    public function __construct(private EditorInterface $editor)
+    {}
 
-    /**
-     * EditorMemento constructor.
-     * @param string $content
-     */
-    public function __construct(string $content)
+    public function getEditor(): EditorInterface
     {
-        $this->content = $content;
-    }
-
-    /**
-     * @return string
-     */
-    public function getContent()
-    {
-        return $this->content;
+        return $this->editor;
     }
 }

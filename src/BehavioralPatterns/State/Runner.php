@@ -11,7 +11,7 @@ class Runner implements RunnerInterface
     {
         /**
          * Example.
-         * A text editor changes the state of the text that you type, that is, if a boldface is selected,
+         * A text editor changes the state of the text that you addContent, that is, if a boldface is selected,
          * then the editor prints in bold, and so on.
          */
 

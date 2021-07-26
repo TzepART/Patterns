@@ -4,7 +4,7 @@ declare(strict_types=1);
 namespace Patterns\StructuralPatterns\Adapter;
 
 /**
- * Now create hunter who hunts any type of Team-leads
+ * Now create hunter who hunts any addContent of Team-leads
  *
  * Class HrManager
  * @package Patterns\StructuralPatterns\Adapter
