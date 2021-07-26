@@ -4,41 +4,27 @@ declare(strict_types=1);
 namespace Patterns\BehavioralPatterns\TemplateMethod;
 
 /**
- * Now create the implementation
- *
- * Class AndroidBuilder
+ * @description Now create the implementation
  * @package Patterns\BehavioralPatterns\TemplateMethod
  */
-class AndroidAbstractBuilder extends AbstractBuilder
+class AndroidAbstractBuilder extends AbstractTemplateBuilder
 {
-    /**
-     * @return mixed|void
-     */
-    public function test()
+    public function test(): void
     {
         echo 'Running android tests' . PHP_EOL;
     }
 
-    /**
-     * @return mixed|void
-     */
-    public function lint()
+    public function lint(): void
     {
         echo 'Linting the android code' . PHP_EOL;
     }
 
-    /**
-     * @return mixed|void
-     */
-    public function assemble()
+    public function assemble(): void
     {
         echo 'Assembling the android build' . PHP_EOL;
     }
 
-    /**
-     * @return mixed|void
-     */
-    public function deploy()
+    public function deploy(): void
     {
         echo 'Deploying android build to server' . PHP_EOL;
     }

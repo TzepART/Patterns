@@ -15,8 +15,7 @@ class Runner implements RunnerInterface
          * assembly, generating assembly reports (coverage reports, code quality, etc.), and deploying the application
          * to a test server.
          */
-        $androidBuilder = new AndroidAbstractBuilder();
-        $androidBuilder->build();
+
 
         /**
          * Output:
@@ -25,9 +24,9 @@ class Runner implements RunnerInterface
          * Assembling the android build
          * Deploying android build to server
          */
+        $androidBuilder = new AndroidAbstractBuilder();
+        $androidBuilder->build();
 
-        $iosBuilder = new IosAbstractBuilder();
-        $iosBuilder->build();
 
         /**
          * Output:
@@ -36,5 +35,7 @@ class Runner implements RunnerInterface
          * Assembling the ios build
          * Deploying ios build to server
          */
+        $iosBuilder = new IosAbstractBuilder();
+        $iosBuilder->build();
     }
 }
