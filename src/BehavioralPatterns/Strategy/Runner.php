@@ -10,7 +10,7 @@ class Runner implements RunnerInterface
     public static function using(): void
     {
         //Create example for sorting
-        $dataSet = [1, 5, 4, 3, 2, 8, 1, 1, 5, 4, 3, 2, 8, 1, 1, 5, 4, 3, 2, 8, 1];
+        $dataSet = range(0, rand(5,15));
 
         if (count($dataSet) > 10) {
             $sorter = new Sorter(new QuickSortStrategy());
@@ -19,6 +19,7 @@ class Runner implements RunnerInterface
         }
 
         $result = $sorter->sort($dataSet);
+
         echo implode(',', $result).PHP_EOL;
     }
 }

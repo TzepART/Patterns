@@ -9,24 +9,14 @@ namespace Patterns\BehavioralPatterns\Strategy;
  */
 class QuickSortStrategy implements SortStrategyInterface
 {
-    /**
-     * @param array $dataSet
-     * @return array
-     */
     public function sort(array $dataSet): array
     {
         echo 'Sorting using quick sort' . PHP_EOL;
 
-        $dataSet = $this->quickSort($dataSet);
-
-        return $dataSet;
+        return $this->quickSort($dataSet);
     }
 
-    /**
-     * @param array $dataSet
-     * @return array
-     */
-    protected function quickSort(array $dataSet)
+    protected function quickSort(array $dataSet): array
     {
         $loe = $gt = [];
         if (count($dataSet) < 2) {
