@@ -4,16 +4,11 @@ declare(strict_types=1);
 namespace Patterns\BehavioralPatterns\State;
 
 /**
- * Class LowerCase
  * @package Patterns\BehavioralPatterns\State
  */
 class LowerCase implements WritingStateInterface
 {
-    /**
-     * @param string $words
-     * @return mixed|void
-     */
-    public function write(string $words)
+    public function write(string $words): void
     {
         echo strtolower($words) . PHP_EOL;
     }

@@ -9,11 +9,7 @@ namespace Patterns\BehavioralPatterns\State;
  */
 class UpperCase implements WritingStateInterface
 {
-    /**
-     * @param string $words
-     * @return mixed|void
-     */
-    public function write(string $words)
+    public function write(string $words): void
     {
         echo strtoupper($words) . PHP_EOL;
     }

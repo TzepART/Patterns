@@ -4,36 +4,18 @@ declare(strict_types=1);
 namespace Patterns\BehavioralPatterns\State;
 
 /**
- * Class TextEditor
  * @package Patterns\BehavioralPatterns\State
  */
-class TextEditor
+class TextEditor implements TextEditorInterface
 {
-    /**
-     * @var WritingStateInterface
-     */
-    protected $state;
+    public function __construct(private WritingStateInterface $state)
+    {}
 
-    /**
-     * TextEditor constructor.
-     * @param WritingStateInterface $state
-     */
-    public function __construct(WritingStateInterface $state)
+    public function setState(WritingStateInterface $state): void
     {
         $this->state = $state;
     }
 
-    /**
-     * @param WritingStateInterface $state
-     */
-    public function setState(WritingStateInterface $state)
-    {
-        $this->state = $state;
-    }
-
-    /**
-     * @param string $words
-     */
     public function type(string $words)
     {
         $this->state->write($words);

@@ -4,16 +4,10 @@ declare(strict_types=1);
 namespace Patterns\BehavioralPatterns\State;
 
 /**
- * First, we make the state interface and states
- *
- * Interface WritingState
+ * @description First, we make the state interface and states
  * @package Patterns\BehavioralPatterns\State
  */
 interface WritingStateInterface
 {
-    /**
-     * @param string $words
-     * @return mixed
-     */
-    public function write(string $words);
+    public function write(string $words): void;
 }
