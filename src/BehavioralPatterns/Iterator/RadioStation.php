@@ -7,27 +7,18 @@ namespace Patterns\BehavioralPatterns\Iterator;
  * Class RadioStation
  * @package Patterns\BehavioralPatterns\Iterator
  */
-class RadioStation
+class RadioStation implements RadioStationInterface
 {
-    /**
-     * @var float
-     */
-    protected $frequency;
+    public function __construct(private string $name, private float $frequency)
+    {}
 
-    /**
-     * RadioStation constructor.
-     * @param float $frequency
-     */
-    public function __construct(float $frequency)
-    {
-        $this->frequency = $frequency;
-    }
-
-    /**
-     * @return float
-     */
     public function getFrequency(): float
     {
         return $this->frequency;
+    }
+
+    public function getName(): string
+    {
+        return $this->name;
     }
 }
