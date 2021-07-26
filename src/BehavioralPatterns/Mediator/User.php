@@ -4,47 +4,20 @@ declare(strict_types=1);
 namespace Patterns\BehavioralPatterns\Mediator;
 
 /**
- * Create an "Colleague"
- *
- * Class User
+ * @description Create an "Colleague"
  * @package Patterns\BehavioralPatterns\Mediator
  */
-class User
+class User implements UserInterface
 {
+    public function __construct(private string $name, private ChatRoomMediatorInterface $chatMediator)
+    {}
 
-    /**
-     * @var string
-     */
-    protected $name;
-
-    /**
-     * @var ChatRoomMediatorInterface
-     */
-    protected $chatMediator;
-
-    /**
-     * User constructor.
-     * @param string $name
-     * @param ChatRoomMediatorInterface $chatMediator
-     */
-    public function __construct(string $name, ChatRoomMediatorInterface $chatMediator)
-    {
-        $this->name = $name;
-        $this->chatMediator = $chatMediator;
-    }
-
-    /**
-     * @return string
-     */
-    public function getName()
+    public function getName(): string
     {
         return $this->name;
     }
 
-    /**
-     * @param $message
-     */
-    public function send($message)
+    public function send(string $message): void
     {
         $this->chatMediator->showMessage($this, $message);
     }
