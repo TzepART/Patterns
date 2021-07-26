@@ -8,11 +8,8 @@ namespace Patterns\StructuralPatterns\Decorator;
  */
 trait CostTrait
 {
-    /**
-     * @return string
-     */
-    public function getFormattedCost()
+    public function getFormattedCost(): string
     {
-        return "Cost - " . $this->getCost();
+        return 'Cost - ' . $this->getCost();
     }
 }

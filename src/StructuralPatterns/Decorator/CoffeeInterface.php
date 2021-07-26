@@ -5,23 +5,11 @@ namespace Patterns\StructuralPatterns\Decorator;
 
 /**
  * Add interface for coffee and simple class
- *
  * Interface CoffeeInterface
  */
 interface CoffeeInterface
 {
-    /**
-     * @return integer
-     */
-    public function getCost();
-
-    /**
-     * @return string
-     */
-    public function getFormattedCost();
-
-    /**
-     * @return string
-     */
-    public function getDescription();
+    public function getCost(): int;
+    public function getFormattedCost(): string;
+    public function getDescription(): string;
 }

@@ -8,36 +8,23 @@ namespace Patterns\StructuralPatterns\Decorator;
  *
  * Class MilkCoffee
  */
-class MilkCoffee implements CoffeeInterface
+class MilkCoffeeDecorator implements CoffeeInterface
 {
     use CostTrait;
 
     /**
-     * @var CoffeeInterface
-     */
-    protected $coffee;
-
-    /**
      * MilkCoffee constructor.
-     * @param CoffeeInterface $coffee
      */
-    public function __construct(CoffeeInterface $coffee)
+    public function __construct(private CoffeeInterface $coffee)
     {
-        $this->coffee = $coffee;
     }
 
-    /**
-     * @return int
-     */
-    public function getCost()
+    public function getCost(): int
     {
         return $this->coffee->getCost() + 2;
     }
 
-    /**
-     * @return string
-     */
-    public function getDescription()
+    public function getDescription(): string
     {
         return $this->coffee->getDescription() . ', milk';
     }
