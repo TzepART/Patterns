@@ -2,7 +2,7 @@
 It's simple project with examples of patterns on PHP
 
 ## Try running of code
-If you have PHP version >=7.1, than make in terminal next commands
+If you have Docker, then execute in terminal next commands:
 
 ``` shell script
 git clone https://github.com/TzepART/examples-of-patterns.git
