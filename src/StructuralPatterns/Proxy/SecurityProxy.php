@@ -4,7 +4,7 @@ declare(strict_types=1);
 namespace Patterns\StructuralPatterns\Proxy;
 
 /**
- * @description Make a "proxy", so that the door can perform a protective function
+ * @description Make a 'proxy', so that the door can perform a protective function
  * @package Patterns\StructuralPatterns\Proxy
  */
 class SecurityProxy implements SecurityProxyInterface
@@ -17,7 +17,7 @@ class SecurityProxy implements SecurityProxyInterface
         if ($this->authenticate(password: $password)) {
             $this->door->open();
         } else {
-            echo "Big no! It isn't possible." . PHP_EOL;
+            echo 'Big no! It isn\'t possible.' . PHP_EOL;
         }
     }
 

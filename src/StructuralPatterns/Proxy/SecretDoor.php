@@ -10,11 +10,11 @@ class SecretDoor implements DoorInterface
 {
     public function open(): void
     {
-        echo "Opening secret door" . PHP_EOL;
+        echo 'Opening secret door' . PHP_EOL;
     }
 
     public function close(): void
     {
-        echo "Closing the secret door" . PHP_EOL;
+        echo 'Closing the secret door' . PHP_EOL;
     }
 }
