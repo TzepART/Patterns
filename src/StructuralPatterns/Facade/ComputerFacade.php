@@ -9,22 +9,13 @@ namespace Patterns\StructuralPatterns\Facade;
  * Class ComputerFacade
  * @package Patterns\StructuralPatterns\Facade
  */
-class ComputerFacade
+class ComputerFacade implements ComputerFacadeInterface
 {
     /**
-     * @var Computer
-     */
-    protected $computer;
-
-    /**
      * ComputerFacade constructor.
-     * @param Computer $computer
      */
-    public function __construct(Computer $computer)
-    {
-        $this->computer = $computer;
-    }
-
+    public function __construct(private ComputerInterface $computer)
+    {}
 
     public function turnOn()
     {
@@ -33,7 +24,6 @@ class ComputerFacade
         $this->computer->showLoadingScreen();
         $this->computer->bam();
     }
-
 
     public function turnOff()
     {

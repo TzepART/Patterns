@@ -7,45 +7,39 @@ namespace Patterns\StructuralPatterns\Facade;
  * Class Computer
  * @package Patterns\StructuralPatterns\Facade
  */
-class Computer
+class Computer implements ComputerInterface
 {
-    public function getElectricShock()
+    public function getElectricShock(): void
     {
         echo 'Ouch!' . PHP_EOL;
     }
 
-
-    public function makeSound()
+    public function makeSound(): void
     {
         echo 'Beep beep!' . PHP_EOL;
     }
 
-
-    public function showLoadingScreen()
+    public function showLoadingScreen(): void
     {
         echo 'Loading..' . PHP_EOL;
     }
 
-
-    public function bam()
+    public function bam(): void
     {
         echo 'Ready to be used!' . PHP_EOL;
     }
 
-
-    public function closeEverything()
+    public function closeEverything(): void
     {
         echo 'Bup bup bup buzzzz!' . PHP_EOL;
     }
 
-
-    public function sooth()
+    public function sooth(): void
     {
         echo 'Zzzzz' . PHP_EOL;
     }
 
-
-    public function pullCurrent()
+    public function pullCurrent(): void
     {
         echo 'Haaah!' . PHP_EOL;
     }
