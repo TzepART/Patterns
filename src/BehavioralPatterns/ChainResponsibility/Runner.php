@@ -19,13 +19,9 @@ class Runner implements RunnerInterface
          * If the bank can not pay, go to Paypal
          * If Paypal can not, go to Bitcoin
          */
-
-        $bank = new BankAccount(100);      // BankAccount have balance 100
-        $paypal = new PaypalAccount(200);  // PaypalAccount have balance 200
-        $bitcoin = new BitcoinAccount(300);// BitcoinAccount have balance 300
-
-        $bank->setNext($paypal);
-        $paypal->setNext($bitcoin);
+        $bitcoin = new BitcoinAccount(balance: 300);// BitcoinAccount have balance 300
+        $paypal = new PaypalAccount(balance: 200, nextInChain: $bitcoin); // PaypalAccount have balance 200
+        $bank = new BankAccount(balance: 100, nextInChain: $paypal);  // BankAccount have balance 100
 
         // Let's start with the bank
         try {
